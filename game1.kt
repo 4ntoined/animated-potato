@@ -1,4 +1,6 @@
-package com.aarocket.pk
+package com.aarocket.pokemonkt.pk
+
+import com.aarocket.pokemonkt
 
 fun main() {
 	while (1==1)  {
