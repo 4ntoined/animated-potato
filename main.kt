@@ -11,6 +11,7 @@ fun main() {
             while (true) {
                 val mon1 = mon("Dolly")
                 mon1.print_me()
+                println(stat_calculation(100,86,30,212,1.1))
                 print("Now what...\n: ")
                 val inputpoke1 = readlnOrNull()
                 if ((inputpoke1=="b") || (inputpoke1=="B")) {
