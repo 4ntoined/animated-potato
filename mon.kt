@@ -1,13 +1,11 @@
-package com.aarocket.pokemonkt.mon
+package com.aarocket.pokemonkt
 
-import kotlin.random.Random
-
-//class Person(val firstName: String, val lastName: String, var age: Int)
+//import kotlin.random.Random
 
 class mon (var name: String, var level: Int = 100, var nature1: Int = 0, var nature2: Int = 0,
-var hpbase: Int = 100, var atbase: Int = 100, var debase: Int = 100,
-var sabase: Int = 100, var sdbase: Int = 100, var spbase: Int = 100,
-var type1: Int = 0, val type2: Int = 18, val random_move: Boolean = true, var how_created: String = "nursery") {
+           var hpbase: Int = 100, var atbase: Int = 100, var debase: Int = 100,
+           var sabase: Int = 100, var sdbase: Int = 100, var spbase: Int = 100,
+           var type1: Int = 0, val type2: Int = 18, val random_move: Boolean = true, var how_created: String = "nursery") {
     init {
         //birth details
         // record the time of initialization
