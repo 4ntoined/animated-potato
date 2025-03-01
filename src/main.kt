@@ -1,7 +1,7 @@
 package com.aarocket.pokemonkt
 
 val mainmenu = "[quit]\n\n[P] Pok\u00e9mon\n[B] Battle!\n"
-val codex1 = codexer()
+//val codex1 = codexer()
 
 fun main() {
     while (true)  {
@@ -11,7 +11,7 @@ fun main() {
         if ((input000 == "p") || (input000 == "P")) {
             while (true) {
                 val mon1 = mon("Dolly")
-                mon1.print_me()
+                mon1.summary()
                 println(stat_calculation(100,86,30,212,1.1))
                 print("Grass onto Fire")
                 println(codex1[3][1])

@@ -9,13 +9,35 @@ fun HPstat_calculation (level: Int,base: Int, IVstat: Int, EVstat: Int): Int {
     val ans = (((2 * base + IVstat + EVstat/4)*level/100.0)+level+10).toInt()
     return ans
 }
+fun typeIndexToString (): List<String> {
+    val typeStrings = listOf<String>(
+        "Normal",
+        "Fire",
+        "Water",
+        "Grass",
+        "Electric",
+        "Ice",
+        "Fighting",
+        "Poison",
+        "Ground",
+        "Flying",
+        "Psychic",
+        "Bug",
+        "Rock",
+        "Ghost",
+        "Dragon",
+        "Dark", 
+        "Steel",
+        "Fairy",
+        "Typeless"
+    )
+    return typeStrings
+}
 fun codexer (): Array<DoubleArray> {
     // normal 0,fire 1,water 2,grass 3,electric 4,ice 5,fighting 6,poison 7,
     // ground 8,flying 9,psychic 10,bug 11,rock 12,ghost 13,dragon 14,dark 15,
     // steel 16,fairy 17,typeless (no relationships) 18
-    val row: Int = 19
-    //val column: Int = 19
-    val codex: Array<DoubleArray> = Array(row) { DoubleArray(row) {1.0} }
+    val codex: Array<DoubleArray> = Array(19) { DoubleArray(19) {1.0} }
     // normal
     codex[0][12]    = 0.5  //rock
     codex[0][13]    = 0.0  //ghost
@@ -158,3 +180,6 @@ fun codexer (): Array<DoubleArray> {
     // does neutral (x1.0) damage to every type
     return codex
 }
+
+val codex1 = codexer()
+val typeStrings = typeIndexToString()
