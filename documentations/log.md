@@ -6,3 +6,5 @@
 18:25- progress is slow, but its progress!! hardwiring the type matchups
 is more work than I remember.
 
+1 march 2025
+01:06- finished the type matchups!
