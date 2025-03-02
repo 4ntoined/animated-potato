@@ -8,3 +8,8 @@ is more work than I remember.
 
 1 march 2025
 01:06- finished the type matchups!
+
+2 march 2025
+13:11- pokemon have stats... that's the latest accomplishment...
+this is gonna take... so long
+

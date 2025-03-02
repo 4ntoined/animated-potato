@@ -5,10 +5,32 @@ fun stat_calculation (level: Int,base: Int, IVstat: Int, EVstat: Int, nature: Do
     val ans = (((2 * base + IVstat + EVstat/4)*level/100.0+5.0)*nature).toInt()
     return ans
 }
+
+/*
+fun stat_calculation_mon (poke: mon, stat: str): Int {
+    //stat == 'at','de','sa','sd','sp'
+    when (stat) {
+        //'hp' -> val ans = (((2 * poke.hpbase + poke.hpiv + poke.hpev/4)*poke.level/100.0+5.0)*poke.nature_multipliers[0]).toInt()
+        'at' -> val ans = (((2 * poke.atb + poke.ativ + poke.atev/4)*poke.level/100.0+5.0)*poke.nature_multipliers[1]).toInt()
+        'de' -> val ans = (((2 * poke.deb + poke.deiv + poke.deev/4)*poke.level/100.0+5.0)*poke.nature_multipliers[2]).toInt()
+        'sa' -> val ans = (((2 * poke.sab + poke.saiv + poke.saev/4)*poke.level/100.0+5.0)*poke.nature_multipliers[3]).toInt()
+        'sd' -> val ans = (((2 * poke.sdb + poke.sdiv + poke.sdev/4)*poke.level/100.0+5.0)*poke.nature_multipliers[4]).toInt()
+        'sp' -> val ans = (((2 * poke.spb + poke.spiv + poke.spev/4)*poke.level/100.0+5.0)*poke.nature_multipliers[5]).toInt()
+        else -> val ans = 0
+    }
+    //val ans = (((2 * base + IVstat + EVstat/4)*level/100.0+5.0)*nature).toInt()
+    return ans
+}
+ */
 fun HPstat_calculation (level: Int,base: Int, IVstat: Int, EVstat: Int): Int {
     val ans = (((2 * base + IVstat + EVstat/4)*level/100.0)+level+10).toInt()
     return ans
 }
+fun HPstat_calculation_mon (poke: mon): Int {
+    val ans = (((2 * poke.hpb + poke.hpiv + poke.hpev/4)*poke.level/100.0)+poke.level+10).toInt()
+    return ans
+}
+
 fun typeIndexToString (): List<String> {
     val typeStrings = listOf<String>(
         "Normal",

@@ -12,7 +12,7 @@ fun main() {
             while (true) {
                 val mon1 = mon("Dolly")
                 mon1.summary()
-                println(stat_calculation(100,86,30,212,1.1))
+                println(mon1.spatk)
                 print("Grass onto Fire")
                 println(codex1[3][1])
                 print("Steel onto Fairy")
