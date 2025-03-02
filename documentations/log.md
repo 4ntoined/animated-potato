@@ -12,4 +12,7 @@ is more work than I remember.
 2 march 2025
 13:11- pokemon have stats... that's the latest accomplishment...
 this is gonna take... so long
+13:44- started implementing moves. kind of really different so far from
+how I had things set up in python so it's making me nervous but alas
+we march ever forward
 

@@ -17,6 +17,7 @@ fun main() {
                 println(codex1[3][1])
                 print("Steel onto Fairy")
                 println(codex1[16][17])
+                println(movelist[1].description)
                 print("Now what...\n: ")
                 val inputpoke1 = readlnOrNull()
                 if ((inputpoke1=="b") || (inputpoke1=="B")) {
