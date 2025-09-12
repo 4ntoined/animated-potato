@@ -203,5 +203,5 @@ fun codexer (): Array<DoubleArray> {
     return codex
 }
 
-val codex1 = codexer()
+val codex0 = codexer()
 val typeStrings = typeIndexToString()

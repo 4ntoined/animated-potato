@@ -10,13 +10,13 @@ fun main() {
 
         if ((input000 == "p") || (input000 == "P")) {
             while (true) {
-                val mon1 = mon("Dolly")
+                val mon1 = mon("Dolly",ativ=31,type1=0,type2=18)
                 mon1.summary()
                 println(mon1.spatk)
                 print("Grass onto Fire")
-                println(codex1[3][1])
+                println(codex0[3][1])
                 print("Steel onto Fairy")
-                println(codex1[16][17])
+                println(codex0[16][17])
                 println(movelist[1].description)
                 print("Now what...\n: ")
                 val inputpoke1 = readlnOrNull()

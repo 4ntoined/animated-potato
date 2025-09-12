@@ -1,6 +1,11 @@
 package com.aarocket.pokemonkt
 
 //import kotlin.random.Random
+import java.util.TimeZone
+//import java.time.LocalDateTime
+//import java.time.ZonedDateTime
+//import java.time.ZoneOffset
+import java.time.Instant
 
 class mon (
     var name: String,
@@ -31,41 +36,58 @@ class mon (
     var maxhp: Int = 100,
     var currenthp: Int = 100,
     var currenthpp: Double = 100.0,
-    val type1: Int = 0, val type2: Int = 99,
+    var type1: Int = 0,
+    var type2: Int = 99,
     var type: Array<Int> = arrayOf<Int>(0),
     var dualType: Boolean = false,
     var gender: String = "not set",
-    var nature1: Int = 0, var nature2: Int = 0,
+    var nature_up: Int = 0,
+    var nature_down: Int = 0,
     var null_nature: Boolean = true,
     var nature_multipliers: Array<Double> = arrayOf<Double>(1.0,1.0,1.0,1.0,1.0),
     var knownMoves: List<Int> = mutableListOf(0),
     val random_move: Boolean = true,
-    var how_created: String = "nursery"
+    var birth_path: String = "hacked",
+    var birth_place: String = "not set",
+    val birth_time_seconds: Long = -999999,
+    val birth_time_nanos: Int = -999999,
+    var birth_time_instant: Instant = Instant.ofEpochSecond(0),
+    var halloffame_count: Int = 0,
     ) {
     init {
-        //birth details
-        // record the time of initialization
-        // record location, using timezone
-        // record the exact method of intialization
-        // has it entered the hall of fame?
+        // BIRTH details
+        // record the method of intialization
+        if (birth_place == "not set") {
+            // birth place data not given, use system setting
+            // otherwise, go with whatever was given in the constructor, even if that's nonsense
+            birth_place = TimeZone.getDefault().id
+        }
+        // record the time and place of initialization
+        // birth time data NOT given, use current time
+        if ((birth_time_seconds == -999999.toLong()) && (birth_time_nanos == -999999)){
+            birth_time_instant = Instant.now()
+        } else { //birth time data WAS given, use it to construct the birth time variable
+            birth_time_instant = Instant.ofEpochSecond(birth_time_seconds,birth_time_nanos.toLong())
+        }
+        //val birth_time_local = LocalDateTime.now()
+        //var birth_time_UTC = ZonedDateTime.now(ZoneOffset.UTC)
+        //var birth_time_local = birth_time_UTC.withZoneSameInstant(ZoneId.of(birth_place))
         //
         // GENDER
-        // if gender has not been assigned, assign a gender
-        // at random
+        // if gender has not been assigned, assign a gender at random
         if (gender == "not set") {
             gender = listOf("N","F","M").random()
         }
-
+        // NATURE
         // calculate the nature multiplier array
-        
-        if (nature1 == nature2) {
-            null_nature = true
-        } else {
+        if (nature_up != nature_down) {
             null_nature = false
-            nature_multipliers[nature1] = 1.1
-            nature_multipliers[nature2] = 0.9
+            nature_multipliers[nature_up] = 1.1
+            nature_multipliers[nature_down] = 0.9
+        } else {
+            null_nature = true
         }
-        // calculate the stats
+        // STATS
         attack = stat_calculation(level, atb, ativ, atev, nature_multipliers[0])
         defense = stat_calculation(level, deb, deiv, deev, nature_multipliers[1])
         spatk = stat_calculation(level, sab, saiv, saev, nature_multipliers[2])
@@ -76,35 +98,31 @@ class mon (
         currenthpp = 100.0
         // TYPE ASSIGNMENT
         // is type1 is an invalid type?
-        if ((type1 > 18) || (type1 < 0)) { //yes
-            //dualType = false
+        if ((type1 > 17) || (type1 < 0)) { //yes
             // is type 2 an invalid type?
-            if ((type2 > 18) || (type2 < 0)) {
+            if ((type2 > 17) || (type2 < 0)) {
                 //yes
-                //no valid types, assign the normal type
-                type = arrayOf<Int>(0)
-            } else {//no
-                //assign type1 to be type2's type, singly typed pokemon
+                // no valid types, assign the normal type
+                type = arrayOf<Int>(18)
+            } else {// type 2 is valid, type 1 is not
+                // assign type1 to be type2's type, singly typed pokemon
                 type = arrayOf<Int>(type2)
             }
-        } else { //no, type1 is valid
-            //is there a valid type 2?
-            if ((type2 < 19) && (type2 >= 0)) {
-                //yes
-                //is type 2 the same as type 1?
+        } else { // type 1 is valid
+            // is there a valid type 2?
+            if ((type2 < 18) && (type2 >= 0)) {
+                // type 2 and type 1 are valid
+                // is type 2 the same as type 1?
                 if (type2 == type1) {
-                    //yes
-                    //pokemon is singly typed
-                    //dualType = false
+                    // the two types are the same
+                    // the pokemon is singly typed
                     type = arrayOf<Int>(type1)
-                } else {//no
+                } else {// type 2 is different from type 1
                     //pokemon has 2 types, assigned normally
-                    //dualType = true
                     type = arrayOf<Int>(type1,type2)
                 }
-            } else {//no
-                //pokemon is singly typed
-                //dualType = false
+            } else {// type 2 is not valid, type 1 is
+                // pokemon is singly typed
                 type = arrayOf<Int>(type1)
             }
         }
@@ -122,6 +140,9 @@ class mon (
         } else {
             println("Type: $type1str")
         }
+        println("You met @ $birth_time_instant")
+        println("You met @ $birth_place")
+        println("Gender: $gender")
     }
 
     fun print_me() {
