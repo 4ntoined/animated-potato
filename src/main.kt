@@ -10,8 +10,8 @@ fun main() {
 
         if ((input000 == "p") || (input000 == "P")) {
             while (true) {
-                val mon1 = mon("Dolly",ativ=31,type1=0,type2=18)
-                mon1.summary()
+                val mon1 = mon("Dolly",saiv=31,type1=17,type2=4,birth_time_seconds=10,nature_up=2,nature_down=1)
+                mon1.summary(inBattle=true)
                 println(mon1.spatk)
                 print("Grass onto Fire")
                 println(codex0[3][1])

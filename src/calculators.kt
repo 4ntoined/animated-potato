@@ -1,6 +1,8 @@
 package com.aarocket.pokemonkt
 
-// used to calculate a pokemon's stats... will make a version to just take the pokemon as input
+import java.time.format.DateTimeFormatter
+
+// used to calculate a pokemon's stats
 fun stat_calculation (level: Int,base: Int, IVstat: Int, EVstat: Int, nature: Double): Int {
     val ans = (((2 * base + IVstat + EVstat/4)*level/100.0+5.0)*nature).toInt()
     return ans
@@ -55,6 +57,29 @@ fun typeIndexToString (): List<String> {
     )
     return typeStrings
 }
+
+fun nature_arrayer (): Array<Array<String>> {
+    // atk = 0, def = 1, spatk = 2, spdef = 3, speed = 4
+    var nature_box: Array<Array<String>> = Array(5) {Array(5) {"A"}}
+    nature_box[0] = arrayOf<String>("Hardy","Lonely","Adamant","Naughty","Brave")
+    nature_box[1] = arrayOf<String>("Bold","Docile","Impish","Lax","Relaxed")
+    nature_box[2] = arrayOf<String>("Modest","Mild","Bashful","Rash","Quiet")
+    nature_box[3] = arrayOf<String>("Calm","Gentle","Careful","Quirky","Sassy")
+    nature_box[4] = arrayOf<String>("Timid","Hasty","Jolly","Naive","Serious")
+    return nature_box
+}
+
+fun nature_statter (): List<String> {
+    val nature_stats = listOf<String>(
+        "Attack",
+        "Defense",
+        "Sp.Atk",
+        "Sp.Def",
+        "Speed"
+    )
+    return nature_stats
+}
+
 fun codexer (): Array<DoubleArray> {
     // normal 0,fire 1,water 2,grass 3,electric 4,ice 5,fighting 6,poison 7,
     // ground 8,flying 9,psychic 10,bug 11,rock 12,ghost 13,dragon 14,dark 15,
@@ -205,3 +230,6 @@ fun codexer (): Array<DoubleArray> {
 
 val codex0 = codexer()
 val typeStrings = typeIndexToString()
+val nature_names = nature_arrayer()
+val nature_stat_str = nature_statter()
+val summary_time_formatter = DateTimeFormatter.ofPattern("EEE d MMM yyyy @ HH:mm:ss")

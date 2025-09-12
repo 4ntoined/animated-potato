@@ -3,9 +3,11 @@ package com.aarocket.pokemonkt
 //import kotlin.random.Random
 import java.util.TimeZone
 //import java.time.LocalDateTime
-//import java.time.ZonedDateTime
+import java.time.ZonedDateTime
+import java.time.ZoneId
 //import java.time.ZoneOffset
 import java.time.Instant
+//import java.time.format.DateTimeFormatter
 
 class mon (
     var name: String,
@@ -36,6 +38,11 @@ class mon (
     var maxhp: Int = 100,
     var currenthp: Int = 100,
     var currenthpp: Double = 100.0,
+    var battack: Int = 1,
+    var bdefense: Int = 1,
+    var bspatk: Int = 1,
+    var bspdef: Int = 1,
+    var bspeed: Int = 1,
     var type1: Int = 0,
     var type2: Int = 99,
     var type: Array<Int> = arrayOf<Int>(0),
@@ -96,6 +103,12 @@ class mon (
         maxhp = HPstat_calculation(level, hpb, hpiv, hpev)
         currenthp = maxhp
         currenthpp = 100.0
+        // IN-BATTLE STATS
+        battack = attack
+        bdefense = defense
+        bspatk = spatk
+        bspdef = spdef
+        bspeed = speed
         // TYPE ASSIGNMENT
         // is type1 is an invalid type?
         if ((type1 > 17) || (type1 < 0)) { //yes
@@ -131,18 +144,65 @@ class mon (
         //
     }
 
-    fun summary() {
+    fun summary(inBattle: Boolean = false) {
+        // NAME
+        println("Name:   \t$name")
+        // LEVEL
+        println("Level:  \t$level")
+        // TYPE
         val type1str = typeStrings[type[0]]
-        println("Name: $name\t| Level: $level")
         if (dualType) {
             val type2str = typeStrings[type[1]]
-            println("Type: $type1str | $type2str")
+            println("Type:   \t$type1str // $type2str")
         } else {
-            println("Type: $type1str")
+            println("Type:   \t$type1str")
         }
-        println("You met @ $birth_time_instant")
-        println("You met @ $birth_place")
-        println("Gender: $gender")
+        // GENDER
+        println("Gender: \t$gender")
+        // NATURE
+        val naturestr = nature_names[nature_up][nature_down]
+        val naturestat_up = nature_stat_str[nature_up]
+        val naturestat_down = nature_stat_str[nature_down]
+        
+        println("Nature: $naturestr | Boosted - $naturestat_up, Nerfed - $naturestat_down")
+        // STATS
+        println("HP     :\t$currenthp/$maxhp \t$currenthpp%")
+        if (inBattle) {
+            //
+            println("*These stats reflect in-battle boosts and nerfs.*")
+            println("Attack :\t$battack")
+            println("Defense:\t$bdefense")
+            println("Sp.Atk :\t$bspatk")
+            println("Sp.Def :\t$bspdef")
+            println("Speed  :\t$bspeed")
+            
+        } else {
+            //
+            println("Attack :\t$attack")
+            println("Defense:\t$defense")
+            println("Sp.Atk :\t$spatk")
+            println("Sp.Def :\t$spdef")
+            println("Speed  :\t$speed")
+        }
+        // MOVES
+        //
+        // MET DATA
+        println("This Pok\u00e9mon was initialized on")
+        // TIME
+        val birth_time_str = ZonedDateTime.ofInstant(birth_time_instant, ZoneId.of("Z")).format(summary_time_formatter)
+        println("=== $birth_time_str" + " UTC")
+        // println() learn datetime formatting
+        // PLACE
+        println("=== In the $birth_place region.")
+        // CONDITIONS
+        when (birth_path) {
+            "nursery" -> println("=== It was hatched in the nursery!")
+            "hacked" -> println("=== It was created externally!")
+            "starter" -> println("=== It was a starter Pokémon!")
+            "elite" -> println("=== It was trained by an elite!")
+            else -> println("=== It appeared mysteriously...")
+        }
+        
     }
 
     fun print_me() {
