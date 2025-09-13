@@ -8,22 +8,6 @@ fun stat_calculation (level: Int,base: Int, IVstat: Int, EVstat: Int, nature: Do
     return ans
 }
 
-/*
-fun stat_calculation_mon (poke: mon, stat: str): Int {
-    //stat == 'at','de','sa','sd','sp'
-    when (stat) {
-        //'hp' -> val ans = (((2 * poke.hpbase + poke.hpiv + poke.hpev/4)*poke.level/100.0+5.0)*poke.nature_multipliers[0]).toInt()
-        'at' -> val ans = (((2 * poke.atb + poke.ativ + poke.atev/4)*poke.level/100.0+5.0)*poke.nature_multipliers[1]).toInt()
-        'de' -> val ans = (((2 * poke.deb + poke.deiv + poke.deev/4)*poke.level/100.0+5.0)*poke.nature_multipliers[2]).toInt()
-        'sa' -> val ans = (((2 * poke.sab + poke.saiv + poke.saev/4)*poke.level/100.0+5.0)*poke.nature_multipliers[3]).toInt()
-        'sd' -> val ans = (((2 * poke.sdb + poke.sdiv + poke.sdev/4)*poke.level/100.0+5.0)*poke.nature_multipliers[4]).toInt()
-        'sp' -> val ans = (((2 * poke.spb + poke.spiv + poke.spev/4)*poke.level/100.0+5.0)*poke.nature_multipliers[5]).toInt()
-        else -> val ans = 0
-    }
-    //val ans = (((2 * base + IVstat + EVstat/4)*level/100.0+5.0)*nature).toInt()
-    return ans
-}
- */
 fun HPstat_calculation (level: Int,base: Int, IVstat: Int, EVstat: Int): Int {
     val ans = (((2 * base + IVstat + EVstat/4)*level/100.0)+level+10).toInt()
     return ans
@@ -228,8 +212,51 @@ fun codexer (): Array<DoubleArray> {
     return codex
 }
 
+fun make_easter_strings(): List<String> {
+    val easterstrings = listOf<String>(
+        "Red","Blue","Yellow","Green","Gold","Silver","Crystal",
+        "Ruby","Sapphire","Emerald","Diamond","Pearl","Platinum",
+        "Black","White", "Gray","X","Y","Z","Z-A","Sun","Moon",
+        "Stars","Eclipse","Sword","Shield","Armor","Crown",
+        "Legends","Scarlet","Violet","Teal","Indigo"
+    )
+    return easterstrings
+}
+
+fun make_fromdex(
+    dexnumber: Int,
+    level: Int = 100,
+    nature_up: Int = (0..4).toList().random(),
+    nature_down: Int = (0..4).toList().random(),
+    birth_path: String = "hacked",
+    nickname: String = ""
+) : mon {
+    val dexdata = pokedex[dexnumber]
+    var named = dexdata.species
+    if (nickname!=""){
+        named = nickname
+    }
+    val mademon = mon(
+        name = named,
+        level = level,
+        hpb = dexdata.hp,
+        atb = dexdata.at,
+        deb = dexdata.de,
+        sab = dexdata.sa,
+        sdb = dexdata.sd,
+        spb = dexdata.sp,
+        type1 = dexdata.type1,
+        type2 = dexdata.type2,
+        birth_path = birth_path
+        )
+    return mademon
+
+}
+
+
 val codex0 = codexer()
 val typeStrings = typeIndexToString()
 val nature_names = nature_arrayer()
 val nature_stat_str = nature_statter()
+val easter_str = make_easter_strings()
 val summary_time_formatter = DateTimeFormatter.ofPattern("EEE d MMM yyyy @ HH:mm:ss")

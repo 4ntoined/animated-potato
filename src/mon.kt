@@ -48,8 +48,8 @@ class mon (
     var type: Array<Int> = arrayOf<Int>(0),
     var dualType: Boolean = false,
     var gender: String = "not set",
-    var nature_up: Int = 0,
-    var nature_down: Int = 0,
+    var nature_up: Int = (0..4).toList().random(),
+    var nature_down: Int = (0..4).toList().random(),
     var null_nature: Boolean = true,
     var nature_multipliers: Array<Double> = arrayOf<Double>(1.0,1.0,1.0,1.0,1.0),
     var knownMoves: List<Int> = mutableListOf(0),
@@ -166,10 +166,9 @@ class mon (
         
         println("Nature: $naturestr | Boosted - $naturestat_up, Nerfed - $naturestat_down")
         // STATS
-        println("HP     :\t$currenthp/$maxhp \t$currenthpp%")
         if (inBattle) {
-            //
             println("*These stats reflect in-battle boosts and nerfs.*")
+            println("HP     :\t$currenthp/$maxhp \t" + String.format("%.2f", currenthpp) + "%")
             println("Attack :\t$battack")
             println("Defense:\t$bdefense")
             println("Sp.Atk :\t$bspatk")
@@ -177,7 +176,7 @@ class mon (
             println("Speed  :\t$bspeed")
             
         } else {
-            //
+            println("HP     :\t$currenthp/$maxhp \t$currenthpp%")
             println("Attack :\t$attack")
             println("Defense:\t$defense")
             println("Sp.Atk :\t$spatk")

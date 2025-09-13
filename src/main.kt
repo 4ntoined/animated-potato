@@ -10,14 +10,11 @@ fun main() {
 
         if ((input000 == "p") || (input000 == "P")) {
             while (true) {
-                val mon1 = mon("Dolly",saiv=31,type1=17,type2=4,birth_time_seconds=10,nature_up=2,nature_down=1)
+                val mon1 = mon("Dolly",saiv=31,type1=17,type2=4,nature_up=2,nature_down=1)
                 mon1.summary(inBattle=true)
-                println(mon1.spatk)
-                print("Grass onto Fire")
-                println(codex0[3][1])
-                print("Steel onto Fairy")
-                println(codex0[16][17])
-                println(movelist[1].description)
+                val mon2 = make_fromdex(dexnumber=900,nickname="Bowl",level=6,birth_path="elite")
+                mon2.summary()
+                println(pokedex[0])
                 print("Now what...\n: ")
                 val inputpoke1 = readlnOrNull()
                 if ((inputpoke1=="b") || (inputpoke1=="B")) {
