@@ -216,43 +216,12 @@ fun make_easter_strings(): List<String> {
     val easterstrings = listOf<String>(
         "Red","Blue","Yellow","Green","Gold","Silver","Crystal",
         "Ruby","Sapphire","Emerald","Diamond","Pearl","Platinum",
-        "Black","White", "Gray","X","Y","Z","Z-A","Sun","Moon",
+        "Black","White","Gray","X","Y","Z","Z-A","Sun","Moon",
         "Stars","Eclipse","Sword","Shield","Armor","Crown",
         "Legends","Scarlet","Violet","Teal","Indigo"
     )
     return easterstrings
 }
-
-fun make_fromdex(
-    dexnumber: Int,
-    level: Int = 100,
-    nature_up: Int = (0..4).toList().random(),
-    nature_down: Int = (0..4).toList().random(),
-    birth_path: String = "hacked",
-    nickname: String = ""
-) : mon {
-    val dexdata = pokedex[dexnumber]
-    var named = dexdata.species
-    if (nickname!=""){
-        named = nickname
-    }
-    val mademon = mon(
-        name = named,
-        level = level,
-        hpb = dexdata.hp,
-        atb = dexdata.at,
-        deb = dexdata.de,
-        sab = dexdata.sa,
-        sdb = dexdata.sd,
-        spb = dexdata.sp,
-        type1 = dexdata.type1,
-        type2 = dexdata.type2,
-        birth_path = birth_path
-        )
-    return mademon
-
-}
-
 
 val codex0 = codexer()
 val typeStrings = typeIndexToString()

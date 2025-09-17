@@ -1,36 +1,34 @@
 package com.aarocket.pokemonkt
 
 import java.io.File
-import java.io.BufferedReader
+//import java.io.BufferedReader
 
-fun pd2() {
-    val bufferedReader: BufferedReader = File("/home/antoine/projects/pokemonpy-package/src/pokemonpy/somemons/somemons.dat").bufferedReader()    
-    val inputString = bufferedReader.use { it.readLine() }
-    println(inputString)
-}
-
-// Data class to represent a single record from the CSV file.
-// Each property corresponds to a column in the CSV.
+data class Dexpage(
+    val ID: Int,
+    val species: String,
+    val hp: Int,
+    val at: Int,
+    val de: Int,
+    val sa: Int,
+    val sd: Int,
+    val sp: Int,
+    val type1: Int,
+    val type2: Int
+)
 
 fun pokedexer(pokedex_path : String) : List<Dexpage> {
     val dexpath = pokedex_path
     val file = File(dexpath)
 
-    // Check if the file exists before attempting to read it.
     if (!file.exists()) {
         println("Error: The file '$dexpath' was not found.")
         null
     }
-
-    // Read all lines from the file, skipping the header row with drop(1).
     val dex: List<Dexpage> = file.readLines().mapNotNull { line ->
-        // Split each line by the comma delimiter.
         val columns = line.split(',')
 
-        // Basic validation to ensure the row has the correct number of columns.
         if (columns.size == 10) {
             try {
-                // Create a Dexpage object by converting each column to the correct type.
                 Dexpage(
                     ID = columns[0].toInt(),
                     species = columns[1].trim(),
@@ -44,11 +42,9 @@ fun pokedexer(pokedex_path : String) : List<Dexpage> {
                     type2 = columns[9].toInt()
                 )
             } catch (e: NumberFormatException) {
-                //println("Warning: Skipping malformed line (invalid number): $line")
                 null // Return null for this line if a number format is incorrect.
             }
         } else {
-            // println("Warning: Skipping malformed line (incorrect column count): $line")
             null // Return null for this line if the column count is wrong.
         }
     }
