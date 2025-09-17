@@ -1,12 +1,13 @@
 package com.aarocket.pokemonkt
 
 fun make_fromdex(
-    dexnumber: Int,
+    dexnumber: Int = (0..n_pokedex-1).toList().random(),
     level: Int = 100,
     nature_up: Int = (0..4).toList().random(),
     nature_down: Int = (0..4).toList().random(),
     birth_path: String = "hacked",
-    nickname: String = ""
+    nickname: String = "",
+    random: Boolean = false
 ) : mon {
     val dexdata = pokedex[dexnumber]
     var named = dexdata.species

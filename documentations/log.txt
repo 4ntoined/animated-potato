@@ -3,14 +3,14 @@ The "Untitled Kotlin Game" Dev Log
 28 february 2025
 13:25- started the log!
 16:44- figured some stuff out. gonna see how far I can go with this...
-18:25- progress is slow, but its progress!! hardwiring the type matchups
+18:25- progress is slow, but it's progress!! hardwiring the type matchups
 is more work than I remember.
 
 1 march 2025
 01:06- finished the type matchups!
 
 2 march 2025
-13:11- pokemon have stats... that's the latest accomplishment...
+13:11- pokémon have stats... that's the latest accomplishment...
 this is gonna take... so long
 13:44- started implementing moves. kind of really different so far from
 how I had things set up in python so it's making me nervous but alas
@@ -30,5 +30,19 @@ with kotlin/java date-time recording and recalling and formatting mess
 hoping I won't have to return to it for a while
 
 13 september 2025
-18:26- did a pokedex thing along with a mon-maker function
+18:26- did a pokédex thing along with a mon-maker function
+
+17 september 2025
+17:09- refined the mon-maker function so that it does randomizing too
+I'm actually kinda proud of this little development, in python these
+are two separate function where the randomizer simply picks a dex number
+out of a hat and calls on the non-random mon maker function.
+with this one, if you don't give a dexnumber, it just randomizes, pretty neat
+I could probably spend a few minutes to work this solution into python...
+but i don't think I'm gonna do that right now... maybe one day
+anyway, next thing to do is moves. I will have to go to the python version,
+put all the moves data into a csv-type file, and then make a kotlin script to
+read that file in and put the data into a list of move() data objects
+this is FUN i am having FUN i ENJOY this work
+^^^ trying to remind myself why I'm doing this
 

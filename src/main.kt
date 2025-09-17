@@ -12,8 +12,12 @@ fun main() {
             while (true) {
                 val mon1 = mon("Dolly",saiv=31,type1=17,type2=4,nature_up=2,nature_down=1)
                 mon1.summary(inBattle=true)
-                val mon2 = make_fromdex(dexnumber=900,nickname="Bowl",level=6,birth_path="elite")
+                val mon2 = make_fromdex(level=600,nature_up=2,birth_path="elite")
                 mon2.summary()
+                val mon3 = make_fromdex(dexnumber=900,level=600,nature_down=3,birth_path="elite")
+                mon3.summary()
+                val mon4 = make_fromdex(level=600,nature_down=3,birth_path="elite")
+                mon4.summary()
                 println(pokedex[0])
                 print("Now what...\n: ")
                 val inputpoke1 = readlnOrNull()

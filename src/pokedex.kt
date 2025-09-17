@@ -52,3 +52,4 @@ fun pokedexer(pokedex_path : String) : List<Dexpage> {
 }
 
 val pokedex = pokedexer("somemons.dat")
+val n_pokedex = pokedex.size
