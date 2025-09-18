@@ -2,6 +2,9 @@ package com.aarocket.pokemonkt
 
 import java.time.format.DateTimeFormatter
 
+fun Boolean.toInt() = if (this) 1 else 0
+fun Int.toBoolean() = this != 0
+
 // used to calculate a pokemon's stats
 fun stat_calculation (level: Int,base: Int, IVstat: Int, EVstat: Int, nature: Double): Int {
     val ans = (((2 * base + IVstat + EVstat/4)*level/100.0+5.0)*nature).toInt()

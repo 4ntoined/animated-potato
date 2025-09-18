@@ -11,10 +11,10 @@ is more work than I remember.
 
 2 march 2025
 13:11- pokémon have stats... that's the latest accomplishment...
-this is gonna take... so long
+this is gonna take... so long.
 13:44- started implementing moves. kind of really different so far from
 how I had things set up in python so it's making me nervous but alas
-we march ever forward
+we march ever forward.
 
 12 september 2025
 00:28- I spent like 4 hours on this just now and in all that time really
@@ -23,26 +23,32 @@ don't get me wrong, there was a lot of time spent researching, and then
 more time spent compiling, breaking, and debugging, but I really
 wanted to do other things, make progress in other places and it's just
 kinda funny to me that what I did instead was something quite superfluous
-and not immediately important to the game
-16:49- i made the nature lookup table and worked on the mon summary screen
+and not immediately important to the game.
+16:49- i made the nature lookup table and worked on the mon summary screen.
 somehow even after my ordeal last night I still put HOURS into playing
 with kotlin/java date-time recording and recalling and formatting mess
-hoping I won't have to return to it for a while
+hoping I won't have to return to it for a while.
 
 13 september 2025
-18:26- did a pokédex thing along with a mon-maker function
+18:26- did a pokédex thing along with a mon-maker function.
 
 17 september 2025
-17:09- refined the mon-maker function so that it does randomizing too
+17:09- refined the mon-maker function so that it does randomizing too.
 I'm actually kinda proud of this little development, in python these
 are two separate function where the randomizer simply picks a dex number
 out of a hat and calls on the non-random mon maker function.
-with this one, if you don't give a dexnumber, it just randomizes, pretty neat
+with this one, if you don't give a dexnumber, it just randomizes, pretty neat.
 I could probably spend a few minutes to work this solution into python...
-but i don't think I'm gonna do that right now... maybe one day
+but i don't think I'm gonna do that right now... maybe one day.
 anyway, next thing to do is moves. I will have to go to the python version,
 put all the moves data into a csv-type file, and then make a kotlin script to
-read that file in and put the data into a list of move() data objects
-this is FUN i am having FUN i ENJOY this work
-^^^ trying to remind myself why I'm doing this
+read that file in and put the data into a list of move() data objects.
+this is FUN i am having FUN i ENJOY this work.
+^^^ trying to remind myself why I'm doing this.
+
+18 september 2025
+12:31- yeah okay i did moves and it went almost exactly according to plan minus
+one minor hiccup which I was able to overcome on my first try, so doing pretty good.
+next up is programming the mon maker function to give mons moves, also showing moves
+in summary, then i think we're ready for party making.
 

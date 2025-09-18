@@ -19,6 +19,7 @@ fun main() {
                 val mon4 = make_fromdex(level=600,nature_down=3,birth_path="elite")
                 mon4.summary()
                 println(pokedex[0])
+                println(moveslist[11])
                 print("Now what...\n: ")
                 val inputpoke1 = readlnOrNull()
                 if ((inputpoke1=="b") || (inputpoke1=="B")) {

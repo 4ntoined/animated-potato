@@ -1,0 +1,321 @@
+0|V-create|180|180|5|0|1|1|0|0|The user ignites its forehead and hurls itself at the target![NEWLINE]-Lowers the user's Def. Sp.D and Spe. 1 stage each.|stat self,de:sd:sp,-1:-1:-1,100
+1|Super Spirit Bomb|175|175|5|1|0|3|0|6|The user gathers life-energy from everything in the world and fires it at the target![NEWLINE]-Bomb/ball move.|bullet
+2|Prismatic Laser|160|160|10|1|0|10|0|0|The user attacks the target with lasers using the power of a prism![NEWLINE]-The user must rest on the next turn.|mustRest
+3|Eternabeam|160|160|5|1|0|14|0|0|The user harnesses Dynamax energy and releases it in a beam![NEWLINE]-The user must rest on the next turn.|mustRest
+4|Hyper Beam|150|150|5|1|0|0|0|0|The user attacks with a powerful beam![NEWLINE]-The user must rest on next turn.|mustRest
+5|Giga Impact|150|150|5|0|1|0|0|0|The user charges at the target using every bit of its power![NEWLINE]-The user must rest on next turn.|mustRest
+6|Blast Burn|150|150|5|1|0|1|0|0|The user razes the target with a fiery explosion![NEWLINE]-The user must rest on next turn.|mustRest
+7|Eruption|1|1|5|1|0|1|0|6|The user attacks with explosive fury![NEWLINE]-Power = 150 x userHP%.|spout
+8|Hydro Cannon|150|150|5|1|0|2|0|0|The user attacks the target with a watery blast![NEWLINE]-The user must rest on next turn.|mustRest
+9|Water Spout|1|1|5|1|0|2|0|6|The user spouts water to damage the target![NEWLINE]-Power = 150 x userHP%.|spout
+10|Frenzy Plant|150|150|5|1|0|3|0|0|The user slams the target with roots from an enormous tree![NEWLINE]-The user must rest on next turn.|mustRest
+11|Chloroblast|150|150|5|1|0|3|0|0|The user amasses chlorophyll and launches it at the target![NEWLINE]-The user loses half of its max HP to recoil damage.|recoil 1/2maxhp
+12|Meteor Assault|150|150|5|0|0|6|0|0|The user attacks wildly with its thick leek![NEWLINE]-The user must rest on next turn.|mustRest
+13|Rock Wrecker|150|150|5|0|0|12|0|0|The user launches a huge boulder at the target![NEWLINE]-The user must rest on next turn.[NEWLINE]-Bomb/ball move.|mustRest bullet
+14|Head Smash|150|150|5|0|1|12|0|0|The user attacks the target with a full-power headbutt![NEWLINE]-The user takes 1/2 recoil damage.|recoil 1/2
+15|Roar of Time|150|150|5|1|0|14|0|0|The user shouts a roar that distorts time and inflicts chronological damage on the target![NEWLINE]-The user must rest on next turn.|mustRest
+16|Dragon Energy|1|1|5|1|0|14|0|0|The user attacks by converting its life-force into power![NEWLINE]-Power = 150 x userHP%.|spout
+17|Boomburst|140|140|10|1|0|0|0|5|The user attacks with a terrible, explosive sound![NEWLINE]-Sound-based move.|sound
+18|Freeze Shock|140|140|5|0|0|5|0|0|On the next turn, the user hits the target with electrically charged ice![NEWLINE]-Two-turn move.[NEWLINE]-30% chance to paralyze.|2turn para 30
+19|Ice Burn|140|140|5|1|0|5|0|0|On the next turn, the user surrounds the target withan ultra-cold, freezing wind![NEWLINE]-Two-turn move.[NEWLINE]-30% chance to burn.|2turn burn 30
+20|Psycho Boost|140|140|5|1|0|10|0|0|The user attacks with all its might![NEWLINE]-Lowers the user's Sp.A 2 stages.|stat self,sa,-2,100
+21|Skull Bash|130|130|10|0|1|0|0|0|The user tucks its head in and charges at the target![NEWLINE]-Two-turn move.[NEWLINE]-Raises the user's Def. 1 stage on the first turn.|2turn skullbash
+22|Overheat|130|130|5|1|0|1|0|0|The user attacks with its full power![NEWLINE]-Lowers the user's Sp.A 2 stages.|stat self,sa,-2,100
+23|Blue Flare|130|130|5|1|0|1|0|0|The user engulfs the target in an beautiful, intense blue flame![NEWLINE]-20% chance to burn.|burn 20
+24|Leaf Storm|130|130|5|1|0|3|0|0|The user whips up a storm of leaves around the target![NEWLINE]-Lowers the user's Sp.A 2 stages.|stat self,sa,-2,100
+25|Bolt Strike|130|130|5|0|1|4|0|0|The user surrounds itself with electricity and charges the target![NEWLINE]-20% chance to paralyze.|para 20
+26|Electro Shot|130|130|10|1|0|4|0|0|The user gathers electricity on the first turn and fires a high-voltage shot on the next![NEWLINE]-Two-turn move.[NEWLINE]-Raises the user's Sp.A 1 stage on the first turn.[NEWLINE]-Skips the charging turn in rain.|electroshot 2turn
+27|Draco Meteor|130|130|5|1|0|14|0|0|The user calls upon its draconic heritage and unleashes a storm of meteors![NEWLINE]-Lowers the user's Sp.A 2 stages.|stat self,sa,-2,100
+28|Solar Blade|125|125|10|0|1|3|0|0|The user focuses sunlight into a blade to attack![NEWLINE]-Two-turn move.[NEWLINE]-Skips the charging turn in harsh sunlight.[NEWLINE]-Power is halved in rain, sandstorm, hail.|2turn solar
+29|Double-Edge|120|120|15|0|1|0|0|0|The user rushes the target with a reckless tackle![NEWLINE]-The user takes 1/3 recoil damage.|recoil 1/3
+30|Head Charge|120|120|15|0|1|0|0|0|The user charges with its head and powerful guard hair![NEWLINE]-The user takes 1/4 recoil damage.|recoil 1/4
+31|Mega Kick|120|120|5|0|1|0|0|0|The user launches a kick with muscle-packed power!|null
+32|Crush Grip|1|1|5|0|1|0|0|0|The user crushes the target with great force![NEWLINE]-Power = 120 x targetHP%|crushgrip
+33|Multi-Attack [Normal]|120|120|10|0|1|0|0|0|The user cloaks itself in powerful energy and slams into the target![NEWLINE]-Holding the Normal Memory.|null
+34|Multi-Attack [Fire]|120|120|10|0|1|1|0|0|The user cloaks itself in powerful energy and slams into the target![NEWLINE]-Holding the Fire Memory.|null
+35|Multi-Attack [Water]|120|120|10|0|1|2|0|0|The user cloaks itself in powerful energy and slams into the target![NEWLINE]-Holding the Water Memory.|null
+36|Multi-Attack [Grass]|120|120|10|0|1|3|0|0|The user cloaks itself in powerful energy and slams into the target![NEWLINE]-Holding the Grass Memory.|null
+37|Multi-Attack [Electric]|120|120|10|0|1|4|0|0|The user cloaks itself in powerful energy and slams into the target![NEWLINE]-Holding the Electric Memory.|null
+38|Multi-Attack [Ice]|120|120|10|0|1|5|0|0|The user cloaks itself in powerful energy and slams into the target![NEWLINE]-Holding the Ice Memory.|null
+39|Multi-Attack [Fighting]|120|120|10|0|1|6|0|0|The user cloaks itself in powerful energy and slams into the target![NEWLINE]-Holding the Fighting Memory.|null
+40|Multi-Attack [Poison]|120|120|10|0|1|7|0|0|The user cloaks itself in powerful energy and slams into the target![NEWLINE]-Holding the Poison Memory.|null
+41|Multi-Attack [Ground]|120|120|10|0|1|8|0|0|The user cloaks itself in powerful energy and slams into the target![NEWLINE]-Holding the Ground Memory.|null
+42|Multi-Attack [Flying]|120|120|10|0|1|9|0|0|The user cloaks itself in powerful energy and slams into the target![NEWLINE]-Holding the Flying Memory.|null
+43|Multi-Attack [Psychic]|120|120|10|0|1|10|0|0|The user cloaks itself in powerful energy and slams into the target![NEWLINE]-Holding the Psychic Memory.|null
+44|Multi-Attack [Bug]|120|120|10|0|1|11|0|0|The user cloaks itself in powerful energy and slams into the target![NEWLINE]-Holding the Bug Memory.|null
+45|Multi-Attack [Rock]|120|120|10|0|1|12|0|0|The user cloaks itself in powerful energy and slams into the target![NEWLINE]-Holding the Rock Memory.|null
+46|Multi-Attack [Ghost]|120|120|10|0|1|13|0|0|The user cloaks itself in powerful energy and slams into the target![NEWLINE]-Holding the Ghost Memory.|null
+47|Multi-Attack [Dragon]|120|120|10|0|1|14|0|0|The user cloaks itself in powerful energy and slams into the target![NEWLINE]-Holding the Dragon Memory.|null
+48|Multi-Attack [Dark]|120|120|10|0|1|15|0|0|The user cloaks itself in powerful energy and slams into the target![NEWLINE]-Holding the Dark Memory.|null
+49|Multi-Attack [Steel]|120|120|10|0|1|16|0|0|The user cloaks itself in powerful energy and slams into the target![NEWLINE]-Holding the Steel Memory.|null
+50|Multi-Attack [Fairy]|120|120|10|0|1|17|0|0|The user cloaks itself in powerful energy and slams into the target![NEWLINE]-Holding the Fairy Memory.|null
+51|Techno Blast [Normal]|120|120|5|1|0|0|0|0|The user fires a beam of light at its target![NEWLINE]-Not holding a drive.|null
+52|Techno Blast [Fire]|120|120|5|1|0|1|0|0|The user fires a beam of light at its target![NEWLINE]-Holding the Burn drive.|null
+53|Techno Blast [Water]|120|120|5|1|0|2|0|0|The user fires a beam of light at its target![NEWLINE]-Holding the Douse drive.|null
+54|Techno Blast [Electric]|120|120|5|1|0|4|0|0|The user fires a beam of light at its target![NEWLINE]-Holding the Shock drive.|null
+55|Techno Blast [Ice]|120|120|5|1|0|5|0|0|The user fires a beam of light at its target![NEWLINE]-Holding the Chill drive.|null
+56|Armor Cannon|120|120|5|1|0|1|0|0|The user shoots its own armor out as blazing projectiles![NEWLINE]-Lowers the user's Def. Sp.D 1 stage each.|stat self,de:sd,-1:-1,100
+57|Flare Blitz|120|120|15|0|1|1|0|0|The user cloaks itself in fire and charges the target![NEWLINE]-The user takes 1/3 recoil damage.[NEWLINE]-10% chance to burn.[NEWLINE]-Thaws the user if frozen.|recoil 1/3 burn 10 thaws
+58|Pyro Ball|120|120|5|0|0|1|0|0|The user turns a small stone to a fiery meteor and launches it at the target![NEWLINE]-10% chance to burn.[NEWLINE]-Thaws the user if frozen.[NEWLINE]-Bomb/ball move.|burn 10 thaws bullet
+59|Wave Crash|120|120|10|0|1|2|0|0|The user summons a giant wave and crashes into the target![NEWLINE]-The user takes 1/3 recoil damage.|recoil 1/3
+60|Wood Hammer|120|120|15|0|1|3|0|0|The user slams its rugged body into the target![NEWLINE]-The user takes 1/3 recoil damage.|recoil 1/3
+61|Seed Flare|120|120|5|1|0|3|0|0|The user emits a shockwave from its body to attack the target![NEWLINE]-40% chance to lower the target's Sp.D 2 stages.|stat targ,sd,-2,40
+62|Solar Beam|120|120|10|1|0|3|0|0|The user focuses sunlight into a beam to attack![NEWLINE]-Two-turn move.[NEWLINE]-Skips the charging turn in harsh sunlight.[NEWLINE]-Power is halved in rain, sandstorm, hail.|2turn solar
+63|Volt Tackle|120|120|15|0|1|4|0|0|The user electrifies itself and charges the target![NEWLINE]-The user takes 1/3 recoil damage.[NEWLINE]-10% chance to paralyze.|recoil 1/3 para 10
+64|Zap Cannon|120|120|5|1|0|4|0|0|The user fires an eletric blast like a cannon![NEWLINE]-100% chance to paralyze.[NEWLINE]-Ball/bomb move.|para 100 bullet
+65|Close Combat|120|120|5|0|1|6|0|0|The user drops their guard to achieve an all out attack![NEWLINE]-Lowers the user's Def. Sp.D 1 stage each.|stat self,de:sd,-1:-1,100
+66|Superpower|120|120|15|0|1|6|0|0|The user draws on its latent potential and attacks the target with great power![NEWLINE]-Lowers the user's Atk. Def. 1 stage each.|stat self,at:de,-1:-1,100
+67|Focus Blast|120|120|5|1|0|6|0|0|The user heightens its mental focus an unleashs its power![NEWLINE]-10% chance to lower the target's Sp.D 1 stage.[NEWLINE]-Bomb/ball move.|stat targ,sa,-1,10 bullet
+68|Precipice Blades|120|120|10|0|0|8|0|6|The user manifests the power of the land and attacks the target with fearsome blades of stone!|null
+69|Brave Bird|120|120|15|0|1|9|0|0|The user tucks in its wings and charges at a low altitude![NEWLINE]-The user takes 1/3 recoil damage.|recoil 1/3
+70|Dragon Ascent|120|120|5|0|1|9|0|0|The user attacks by dropping out of the sky at high speed![NEWLINE]-Lowers the user's Def. Sp.D 1 stage each.|stat self,de:sd,-1:-1,100
+71|Future Sight|120|120|5|1|0|10|0|0|The user looks into the future and predicts an attack![NEWLINE]-The opponent is attacked two turns later, at the end of the turn.|futuresight
+72|Megahorn|120|120|10|0|1|11|0|0|The user rams into the target with its tough and impressive horn!|null
+73|Headlong Rush|120|120|5|0|1|12|0|0|The user smashes into the target in a full-body tackle![NEWLINE]-Lowers the user's Def. Sp.D 1 stage each.|stat self,de:sd,-1:-1,100
+74|Shadow Force|120|120|5|0|1|13|0|0|The user disappears into the dark and strikes the target on the next turn![NEWLINE]-Two turn move.|shadowforce 2turn semi-invul
+75|Dragon Fist|120|120|5|0|1|14|0|0|If the user doesn't do it, who will?[NEWLINE]-Raises the user's Spe. 1 stage.[NEWLINE]-Lowers the user's Def. 2 stages, Sp.D 1 stage.|stat self,de:sd:sp,-2:-1:1,100
+76|Make It Rain|120|120|5|1|0|16|0|6|The user throws a mass of gold coins at the target![NEWLINE]-Lowers the user's Sp.A 1 stage.|stat self,sa,-1,100
+77|Fire Blast|110|110|5|1|0|1|0|0|The user attacks with a blast of all-consuming flames![NEWLINE]-10% chance to burn.|burn 10
+78|Origin Pulse|110|110|10|1|0|2|0|6|The user attacks the target with countless beams of glowing blue light![NEWLINE]-Pulse move.|pulse
+79|Hydro Pump|110|110|5|1|0|2|0|0|The user blasts the target with a huge volume of water under great pressure!|null
+80|Steam Eruption|110|110|5|1|0|2|0|0|The user immerses the target in a superheated steam![NEWLINE]-30% chance to burn.[NEWLINE]-Thaws a frozen user or target.|burn 30 thaws thawsTarg scald
+81|Thunder|110|110|10|1|0|4|0|0|The user drops a wicked lightningbolt on the target to inflict damage![NEWLINE]-30% chance to paralyze.[NEWLINE]-Bypasses accuracy check in rain.|para 30 noMissRain thunder
+82|Blizzard|110|110|5|1|0|5|0|6|The user summons a howling blizzard to strike the target![NEWLINE]-10% chance to freeze.[NEWLINE]-Bypasses accuracy check in hail.|frze 10 blizzard
+83|Hurricane|110|110|10|1|0|9|0|1|The user wraps its target in a fierce wind from a furious storm![NEWLINE]-30% chance to confuse.[NEWLINE]-Bypasses accuracy check in rain.|conf 30 noMissRain thunder
+84|Clanging Scales|110|110|5|1|0|14|0|6|The user rubs the scales on its body and makes a huge noise to inflict damage on the target![NEWLINE]-Lowers the user's Def. 1 stage.[NEWLINE]-Sound-based move.|stat self,de,-1,100 sound
+85|Judgement [Normal]|100|100|10|1|0|0|0|0|The user pelts the battlefield with bolts of light from the sky![NEWLINE]-Holding the Blank Plate.|null
+86|Judgement [Fire]|100|100|10|1|0|1|0|0|The user pelts the battlefield with bolts of light from the sky![NEWLINE]-Holding the Flame Plate.|null
+87|Judgement [Water]|100|100|10|1|0|2|0|0|The user pelts the battlefield with bolts of light from the sky![NEWLINE]-Holding the Splash Plate.|null
+88|Judgement [Grass]|100|100|10|1|0|3|0|0|The user pelts the battlefield with bolts of light from the sky![NEWLINE]-Holding the Meadow Plate.|null
+89|Judgement [Electric]|100|100|10|1|0|4|0|0|The user pelts the battlefield with bolts of light from the sky![NEWLINE]-Holding the Zap Plate.|null
+90|Judgement [Ice]|100|100|10|1|0|5|0|0|The user pelts the battlefield with bolts of light from the sky![NEWLINE]-Holding the Icicle Plate.|null
+91|Judgement [Fighting]|100|100|10|1|0|6|0|0|The user pelts the battlefield with bolts of light from the sky![NEWLINE]-Holding the Fist Plate.|null
+92|Judgement [Poison]|100|100|10|1|0|7|0|0|The user pelts the battlefield with bolts of light from the sky![NEWLINE]-Holding the Toxic Plate.|null
+93|Judgement [Ground]|100|100|10|1|0|8|0|0|The user pelts the battlefield with bolts of light from the sky![NEWLINE]-Holding the Earth Plate.|null
+94|Judgement [Flying]|100|100|10|1|0|9|0|0|The user pelts the battlefield with bolts of light from the sky![NEWLINE]-Holding the Sky Plate.|null
+95|Judgement [Psychic]|100|100|10|1|0|10|0|0|The user pelts the battlefield with bolts of light from the sky![NEWLINE]-Holding the Mind Plate.|null
+96|Judgement [Bug]|100|100|10|1|0|11|0|0|The user pelts the battlefield with bolts of light from the sky![NEWLINE]-Holding the Insect Plate.|null
+97|Judgement [Rock]|100|100|10|1|0|12|0|0|The user pelts the battlefield with bolts of light from the sky![NEWLINE]-Holding the Stone Plate.|null
+98|Judgement [Ghost]|100|100|10|1|0|13|0|0|The user pelts the battlefield with bolts of light from the sky![NEWLINE]-Holding the Spooky Plate.|null
+99|Judgement [Dragon]|100|100|10|1|0|14|0|0|The user pelts the battlefield with bolts of light from the sky![NEWLINE]-Holding the Draco Plate.|null
+100|Judgement [Dark]|100|100|10|1|0|15|0|0|The user pelts the battlefield with bolts of light from the sky![NEWLINE]-Holding the Dread Plate.|null
+101|Judgement [Steel]|100|100|10|1|0|16|0|0|The user pelts the battlefield with bolts of light from the sky![NEWLINE]-Holding the Iron Plate.|null
+102|Judgement [Fairy]|100|100|10|1|0|17|0|0|The user pelts the battlefield with bolts of light from the sky![NEWLINE]-Holding the Pixie Plate.|null
+103|Ivy Cudgel [Fire]|100|100|10|0|0|1|0|0|The user strikes the target with a thorny ivy-wrapped cudgel![NEWLINE]-Increased crit' ratio.[NEWLINE]-Holding the Hearthflame Mask.|highCrit
+104|Ivy Cudgel [Water]|100|100|10|0|0|2|0|0|The user strikes the target with a thorny ivy-wrapped cudgel![NEWLINE]-Increased crit' ratio.[NEWLINE]-Holding the Wellspring Mask.|highCrit
+105|Ivy Cudgel [Grass]|100|100|10|0|0|3|0|0|The user strikes the target with a thorny ivy-wrapped cudgel![NEWLINE]-Increased crit' ratio.[NEWLINE]-Holding the Teal Mask.|highCrit
+106|Ivy Cudgel [Rock]|100|100|10|0|0|12|0|0|The user strikes the target with a thorny ivy-wrapped cudgel![NEWLINE]-Increased crit' ratio.[NEWLINE]-Holding the Cornerstone Mask.|highCrit
+107|Fusion Flare|100|100|5|1|0|1|0|0|The user throws down a giant flame![NEWLINE]-Doubles in power if used after Fusion Bolt.[NEWLINE]-Thaws a frozen user.|fusion-f thaws
+108|Sacred Fire|100|100|5|1|0|1|0|0|The user razes the target with a mystical fire of great intensity![NEWLINE]-50% chance to burn the target.[NEWLINE]-Thaws a frozen user.|thaws burn 50
+109|Crabhammer|100|100|10|0|1|2|0|0|The target is hammered with a large pincer![NEWLINE]-Increased crit' ratio.|highCrit
+110|Fusion Bolt|100|100|5|0|0|4|0|0|The user throws down a giant lightning bolt![NEWLINE]-Doubles in power if used after Fusion Flare.|fusion-b
+111|Wildbolt Storm|100|100|10|1|0|4|0|6|The user summons a thunderous tempest and savagely attacks the target with lightning and wind![NEWLINE]-20% chance to paralyze.[NEWLINE]-Bypasses accuracy check in rain.|para 20 noMissRain
+112|Electro Drift|100|100|5|1|1|4|0|0|The user races forward at ultrafast speeds and pierces its target with futuristic electricity![NEWLINE]-Damage boosted by 33.33% if it's a super-effective hit.|collision
+113|Mountain Gale|100|100|10|0|0|5|0|0|The user hurls giant chunks of ice at the target![NEWLINE]-30% chance to make the target flinch.|flinch 30
+114|Collision Course|100|100|5|0|1|6|0|0|The user transforms and crashes into the ground with a massive prehistoric explosion![NEWLINE]-Damage boosted by 33.33% if it's a super-effective hit.|collision
+115|Malignant Chain|100|100|5|1|0|7|0|0|The user wraps the target in a corrosive chain and pours toxins into them![NEWLINE]-50% chance to badly poison.|badPois 50
+116|Earthquake|100|100|10|0|0|8|0|5|The user causes a powerful earthquake![NEWLINE]-Power is halved if used on Grassy Terrain.|nerfGrassy
+117|Sandsear Storm|100|100|10|1|0|8|0|6|The user wraps the target in fierce winds and searlingly hot sand![NEWLINE]-20% chance burn.[NEWLINE]-Bypasses accuracy check in rain.|burn 20 noMissRain
+118|Aeroblast|100|100|5|1|0|9|0|1|The user shoots a vortex of air at the target![NEWLINE]-Increased crit. ratio.|highCrit
+119|Bleakwind Storm|100|100|10|1|0|9|0|6|The user attacks with savagely cold winds that cause both body and spirit to tremble![NEWLINE]-30% chance to lower the target's Spe. 1 stage.[NEWLINE]-Bypasses accuracy check in rain.|stat targ,sp,-1,30 noMissRain
+120|Psystrike|100|100|10|1|0|10|0|0|The user materializes an odd psychic wave to attack![NEWLINE]-Damage is calculated with the user's Sp.A and the target's Def.|psystrike
+121|Stone Edge|100|100|5|0|0|12|0|0|The user stabs the target from below with sharpened stones![NEWLINE]-Increased crit' ratio.|highCrit
+122|Diamond Storm|100|100|5|0|0|12|0|6|The user whips up a storm of diamonds to damage the target![NEWLINE]-50% chance to raise the user's Def. 2 stages.|stat self,de,2,50
+123|Moongeist Beam|100|100|5|1|0|13|0|0|The user attacks the target by emitting a sinister ray![NEWLINE]-Ignores the target's ability.|moldbreaker
+124|Core Enforcer|100|100|10|1|0|14|0|6|The user unleashes a super sick laser and draws a 'Z'!|null
+125|Spacial Rend|100|100|5|1|0|14|0|0|The user tears the fabric of space around the target![NEWLINE]-Increased crit' ratio.|highCrit
+126|Dynamax Cannon|100|100|5|1|0|14|0|0|The user condenses energy within its body and unleashes it at the target!|null
+127|Hyperspace Fury|100|100|5|0|0|15|0|0|The user unleashes a barrage of attacks using its many arms![NEWLINE]-Bypasses accuracy checks.[NEWLINE]-Lowers the user's Def. 1 stage.|breaksProtect noMiss stat self,de,-1,100
+128|Sunsteel Strike|100|100|5|0|1|16|0|0|The user slams into the target with the force of a meteor![NEWLINE]-Ignores the target's ability.|moldbreaker
+129|Behemoth Blade|100|100|5|0|1|16|0|0|The user wields a large, powerful sword and cuts the target with a vigorous slash!|null
+130|Behemoth Bash|100|100|5|0|1|16|0|0|The user's body becomes a firm shield, and it slams into the target fiercely!|null
+131|Iron Tail|100|100|15|0|1|16|0|0|The user slams the target with a steel-hard tail![NEWLINE]-30% chance to lower target's Def. 1 stage.|stat targ,de,-1,30
+132|Spin Out|100|100|5|0|1|16|0|0|The user spins furiously by straining its legs![NEWLINE]-Lowers the user's Spe. 2 stages.|stat self,sp,-2,100
+133|Springtide Storm|100|100|10|1|0|17|0|6|The user wraps the target in fierce winds brimming with love and hate![NEWLINE]-30% chance to lower the target's Atk. 1 stage.|stat targ,at,-1,30
+134|Heat Wave|95|95|10|1|0|1|0|6|The user exhales hot breath on the target![NEWLINE]-10% chance to burn.|burn 10
+135|Big Bang Attack|95|95|15|1|0|4|0|0|The user condenses their ki into an explosive sphere and fires it at the target![NEWLINE]-30% chance to paralyze.|para 30
+136|Moonblast|95|95|15|1|0|17|0|0|The user calls on the power of the Moon to attack the target![NEWLINE]-30% chance to lower the target's Sp.A 1 stage.|stat targ,sa,-1,30
+137|Revelation Dance|90|90|15|1|0|0|0|0|The user attacks the target by dancing with all its might![NEWLINE]-Changes type to match the user's primary type.[NEWLINE]-Dance move.|revelation dance
+138|Flamethrower|90|90|15|1|0|1|0|0|The user attacks with a powerful flame![NEWLINE]-10% chance to burn.|burn 10
+139|Surf|90|90|15|1|0|2|0|5|The user swamps everything around it with a giant wave!|surf
+140|Muddy Water|90|90|10|1|0|2|0|6|The user attacks by shooting muddy water at the target![NEWLINE]-30% chance to lower the target's Accu. 1 stage.|stat targ,ac,-1,30
+141|Aqua Tail|90|90|10|0|1|2|0|0|The user swings its tail like a vicious wave in a raging storm!|null
+142|Leaf Blade|90|90|15|0|1|3|0|0|The user attacks with a sharpened leaf![NEWLINE]-Increased crit' ratio.|highCrit
+143|Energy Ball|90|90|10|1|0|3|0|0|The user draws power from nature and fires it at the target![NEWLINE]-10% chance to lower the target's Sp.D 1 stage.[NEWLINE]-Bomb/ball move.|stat targ,sd,-1,10 bullet
+144|Wild Charge|90|90|15|0|1|4|0|0|The user shrouds itself in electricity and smashes into the target![NEWLINE]-The user takes 1/4 recoil damage.|recoil 1/4
+145|Thunderbolt|90|90|15|1|0|4|0|0|The user attacks with a bolt of lightning![NEWLINE]-10% chance to paralyze.|para 10
+146|Ice Beam|90|90|15|1|0|5|0|0|The user focuses a stream of ice at the target![NEWLINE]-10% chance to freeze.|frze 10
+147|Triple Arrows|90|90|10|0|1|6|0|0|The user kicks, then fires three arrows![NEWLINE]-Increased crit' ratio.[NEWLINE]-50% chance to lower target's Def. 1 stage.[NEWLINE]-30% chance to make the target flinch.|highCrit flinch 30 stat targ,de,-1,50
+148|Sludge Bomb|90|90|10|1|0|7|0|0|The user hurls unsanitary sludge at the target![NEWLINE]-30% chance to poison.[NEWLINE]-Ball/bomb move.|pois 30 bullet
+149|Earth Power|90|90|10|1|0|8|0|0|The user makes the ground under the target erupt with power![NEWLINE]-10% chance to lower target's Sp.D 1 stage.|stat targ,sd,-1,10
+150|Thousand Arrows|90|90|10|0|0|8|0|6|The user creates arrows from the very ground and hurls them at the target![NEWLINE]-Hits ungrounded targets and grounds them.|arrows
+151|Fly|90|90|15|0|1|9|0|1|The user flies up into the sky, then attacks on the next turn![NEWLINE]-Vulnerable to Smack Down, Sky Uppercut, Thunder, Hurricane and double damage from Gust, Twister on the first turn.|2turn flying
+152|Psychic|90|90|10|1|0|10|0|0|The user hits the target with a strong telekinetic force![NEWLINE]-10% chance to lower target's Sp.D 1 stage.|stat targ,sd,-1,10
+153|Mystical Power|90|90|10|1|0|10|0|0|The user attacks by emitting a mysterious power![NEWLINE]-Raises the user's Sp.A 1 stage.|stat self,sa,+1,100
+154|Attack Order|90|90|15|0|0|11|0|0|The user calls on its underlings to pummel the target![NEWLINE]-Increased crit' ratio.|highCrit
+155|First Impression|90|90|10|0|1|11|2|0|The user dashes forward and slashes at the target as soon as it gets the opportunity![NEWLINE]-Priority +2.[NEWLINE]-Only works on the first turn after the user enters battle.|fakeout
+156|Phantom Force|90|90|10|0|1|13|0|0|The user vanishes into another plane, then strikes the target on the next turn!|2turn shadowforce
+157|Play Rough|90|90|10|0|1|17|0|0|The user attacks by playing rough with the target![NEWLINE]-10% chance to lower the target's Atk. 1 stage.|stat targ,at,-1,10
+158|Strange Steam|90|90|10|1|0|17|0|0|The user mixes a special steam and shoots it at the target![NEWLINE]-20% chance to confuse.|conf 20
+159|Blaze Kick|85|85|10|0|1|1|0|0|The user attacks with a fiery kick![NEWLINE]-10% chance to burn.[NEWLINE]-Increased crit' ratio.|highCrit burn 10
+160|Kamehameha|85|85|10|1|0|2|0|1|The user concentrates their ki and releases it in a beam![NEWLINE]-50% chance to lower the target's Def. 2 stages.[NEWLINE]-Pulse move.|stat targ,de,-2,50 pulse
+161|Secret Sword|85|85|10|1|0|6|0|0|The user uses odd power to cut with its long horn![NEWLINE]-Damage is calculated with the user's Sp.A and the target's Def.|psystrike
+162|Bounce|85|85|5|0|1|9|0|1|The user bounces up high on the first turn, then drops onto the target on the next turn![NEWLINE]-Vulnerable to Smack Down, Sky Uppercut, Thunder, Hurricane and double damage from Gust, Twister on the first turn.|2turn flying para 30
+163|Psychic Fangs|85|85|10|0|1|10|0|0|The user bites the target with its psychic capabilities![NEWLINE]-Removes Light Screen, Reflect, Aurora Veil from the opponent's side.|breakScreens
+164|Dragon Pulse|85|85|10|1|0|14|0|1|The user summons a beastly beam from its mouth![NEWLINE]-Pulse move.|pulse
+165|Kowtow Cleave|85|85|10|0|1|15|0|0|The user kowtows to make the target lower its guard... and then slashes at them![NEWLINE]-Bypasses accuracy checks.|slicing noMiss
+166|Extreme Speed|80|80|5|0|1|0|2|0|The user charges at the target with blinding speed![NEWLINE]-Priority +2.|null
+167|Torch Song|80|80|10|1|0|1|0|0|The user breathes raging flames at the target like it's singing a song![NEWLINE]-Raises the user's Sp.A 1 stage.[NEWLINE]-Sound-based move.|stat self,sa,1,100 sound
+168|Lava Plume|80|80|15|1|0|1|0|5|The user torches its surroundings with an inferno of flames![NEWLINE]-30% chance to burn.|burn 30
+169|Fiery Dance|80|80|10|1|0|1|0|0|The user cloaks itself in flames and attacks the target by dancing and flapping its wings![NEWLINE]-50% chance to raise the user's Sp.A 1 stage.[NEWLINE]-Dance move.|stat self,sa,1,50 dance
+170|Fire Lash|80|80|15|0|1|1|0|0|The user strikes with a burning lash![NEWLINE]-Lowers the target's Def. 1 stage.|stat targ,de,-1,100
+171|Hydro Steam|80|80|15|1|0|2|0|0|The user blasts the target with prehistoric, boiling-hot water![NEWLINE]-50% boost in harsh sunlight, while also ignoring the usual Water-type nerf.|hydrosteam
+172|Dive|80|80|10|0|1|2|0|0|The user dives on the first turn, then resurfaces to attack on the next turn![NEWLINE]-Double damage from Surf, Whirlpool on the first turn.|2turn diving
+173|Waterfall|80|80|15|0|1|2|0|0|The user charges at the target with a wall of water![NEWLINE]-20% chance to make the target flinch.|flinch 20
+174|Aqua Step|80|80|10|0|1|2|0|0|The user attacks the target with light and fluid dance steps![NEWLINE]-Raises the user's Spe. 1 stage.|stat self,sp,+1,100
+175|Scald|80|80|15|1|0|2|0|0|The user shoots boiling-hot water at the target![NEWLINE]-30% chance to burn.[NEWLINE]-Thaws a frozen user or target.|burn 30 thaws thawsTarg scald
+176|Seed Bomb|80|80|15|0|0|3|0|0|The user attacks by pummeling the target with hard-shelled seeds![NEWLINE]-Bomb/ball move.|bullet
+177|Drum Beating|80|80|10|0|0|3|0|0|The user plays its drum, controlling its roots to attack the target![NEWLINE]-Lowers the target's Spe. 1 stage.|stat targ,sp,-1,100
+178|Zing Zap|80|80|10|0|1|4|0|0|The user crashes into the target, delivering a powerful electric shock![NEWLINE]-30% chance to make the target flinch.|flinch 30
+179|Aura Sphere|80|80|20|1|0|6|0|1|The user looses a blast of aura from deep within its body![NEWLINE]-Bypasses accuracy checks.[NEWLINE]-Bomb/ball move.[NEWLINE]-Pulse move.|noMiss bullet pulse
+180|Dig|80|80|10|0|1|8|0|0|The user burrows into the ground on the first turn, then attacks on the next turn![NEWLINE]-Double damage from Earthquake, Magnitude, Fissure on the first turn.|2turn digging
+181|Zen Headbutt|80|80|15|0|1|10|0|0|The user focuses its willpower into its head and attacks the target![NEWLINE]-20% chance to make the target flinch.|flinch 20
+182|Esper Wing|80|80|10|1|0|10|0|0|The user slashes the target with aura-enriched wings![NEWLINE]-Raises the user's Spe. 1 stage.[NEWLINE]-Increased crit' ratio.|highCrit stat self,sp,1,100
+183|Psyshock|80|80|10|1|0|10|0|0|The user materializes an odd psychic wave to attack![NEWLINE]-Damage is calculated with the user's Sp.A and the target's Def.|psystrike
+184|Psyblade|80|80|15|0|1|10|0|0|The user rends the target with a futuristic, ethereal blade![NEWLINE]-50% boost on Electric Terrain.|psyblade slicing
+185|Lumina Crash|80|80|10|1|0|10|0|0|The user attacks by unleashing a peculiar light that affects the mind![NEWLINE]-Lowers the target's Sp.D 2 stages.|stat targ,sd,-2,100
+186|Hyperspace Hole|80|80|5|1|0|10|0|0|The user employs a hyperspace hole to appear right next to the target... and then strikes![NEWLINE]-Bypasses accuracy checks.|breaksProtect noMiss
+187|X-Scissor|80|80|15|0|1|11|0|0|The user slashes the target by crossing its claws!|null
+188|Shadow Ball|80|80|15|1|0|13|0|0|The user hurls a shadowy blob at the target![NEWLINE]-20% chance to lower the target's Sp.D 1 stage.[NEWLINE]-Ball/bomb move.|stat targ,sd,-1,20 bullet
+189|Dragon Claw|80|80|15|0|1|14|0|0|The user slashes the target with sharp claws!|null
+190|Fickle Beam|80|80|5|1|0|14|0|0|The user corrals its many heads to shoot beams of light at the target![NEWLINE]-30% chance to double in power.|fickle
+191|Crunch|80|80|15|0|1|15|0|0|The user crunches on the target with sharp fangs![NEWLINE]-20% chance to lower the target's Def. 1 stage.|stat targ,de,-1,20
+192|Dark Pulse|80|80|15|1|0|15|0|1|The user releases a terrible aura imbued with dark thoughts![NEWLINE]-20% chance to make the target flinch.[NEWLINE]-Pulse move.|flinch 20 pulse
+193|Flash Cannon|80|80|10|1|0|16|0|0|The user gathers all its light energy and releases it all at once at the target![NEWLINE]-10% chance to lower target's Sp.D 1 stage.|stat targ,sd,-1,10
+194|Crush Claw|75|75|10|0|1|0|0|0|The user slashes the target with hard, sharp claws![NEWLINE]-50% chance to lower the target's Def. 1 stage.|stat targ,de,-1,50
+195|Relic Song|75|75|10|1|0|0|0|0|The user sings an ancient song and attacks by appealing to the heart of the target![NEWLINE]-10% chance to impose sleep.|sound sleep 10
+196|Mystical Fire|75|75|10|1|0|1|0|0|The user attacks by breathing a special, hot fire![NEWLINE]-Lowers the target's Sp.A 1 stage.|stat targ,sa,-1,100
+197|Fire Punch|75|75|15|0|1|1|0|0|The user hits the target with a fiery punch![NEWLINE]-10% chance to burn.|burn 10
+198|Brick Break|75|75|15|0|1|6|0|0|The user attacks with a swift chop![NEWLINE]-Removes Light Screen, Reflect, Aurora Veil from the opponent's side.|breakScreens
+199|Air Slash|75|75|15|1|0|9|0|1|The user attacks with a blade of air that slices the sky![NEWLINE]-30% chance to make the target flinch.|flinch 30
+200|Signal Beam|75|75|15|1|0|11|0|0|The user attacks with an odd beam of light![NEWLINE]-10% chance to confuse.|conf 10
+201|Bitter Malice|75|75|10|1|0|13|0|0|The user attacks the target with spine-chilling resentment![NEWLINE]-Lowers the target's Atk. 1 stage.|stat targ,at,-1,100
+202|Facade|70|70|20|0|1|0|0|0|An attack that does double damage if the user is poisoned, burned, or paralyzed.|facade
+203|Retaliate|70|70|5|0|1|0|0|0|The user gets revenge for a fainted ally![NEWLINE]-Doubles in power if an ally fainted in the previous turn.|retaliate
+204|Headbutt|70|70|15|0|1|0|0|0|The user sticks out its head and attacks![NEWLINE]-30% chance to make the target flinch.|flinch 30
+205|Aqua Cutter|70|70|20|0|0|2|0|0|The user expels pressurized water to cut the target like a blade![NEWLINE]-Increased crit' ratio.|highCrit
+206|Trop Kick|70|70|15|0|1|3|0|0|The user lands an intense kick of tropical origins on the target![NEWLINE]-Lowers the target's Atk. 1 stage.|stat targ,at,-1,100
+207|Flower Trick|70|70|10|0|0|3|0|0|The user throws a rigged bouquet of flowers at the target![NEWLINE]-Bypasses accuracy check.[NEWLINE]-Always lands a critical hit.|noMiss frostbreath
+208|Scorching Sands|70|70|10|1|0|8|0|0|The user buries the target in searing-hot sand![NEWLINE]-30% chance to burn the target.[NEWLINE]-Thaws the user if frozen.|burn 30 thaws thawsTarg scald
+209|Shadow Claw|70|70|15|0|1|13|0|0|The user materializes a sharp claw from the shadows and slashes at the target![NEWLINE]-Increased crit' ratio.|highCrit
+210|Night Slash|70|70|15|0|1|15|0|0|The user sneaks in and slashes the target the instant it gets the opportunity![NEWLINE]-Increased crit' ratio.|highCrit
+211|Stomp|65|65|20|0|1|0|0|0|The user forcefully stomps on the target![NEWLINE]-30% chance to make the target flinch.|flinch 30 noMissMinimize
+212|Fire Fang|65|65|15|0|1|1|0|0|The user bites with flame-cloaked fangs![NEWLINE]-10% chance to make the target flinch.[NEWLINE]-10% chance to burn.|burn 10 flinch 10
+213|Bubble Beam|65|65|20|1|0|2|0|0|The user forcefully ejects a spray of bubbles at the target![NEWLINE]-10% chance to lower target's Spe. 1 stage.|stat targ,sp,-1,10
+214|Octazooka|65|65|10|1|0|2|0|0|The user sprays ink in the target's face![NEWLINE]-50% chance to lower the target's Accu. 1 stage.[NEWLINE]-Bomb/ball move.|stat targ,ac,-1,50 bullet
+215|Thunder Fang|65|65|15|0|1|4|0|0|The user bites with electrified fangs![NEWLINE]-10% chance to make the target flinch[NEWLINE]-10% chance to paralyze.|para 10 flinch 10
+216|Spark|65|65|20|0|1|4|0|0|The user attacks the target with an electrically charged tackle![NEWLINE]-30% chance to paralyze.|para 30
+217|Ice Fang|65|65|15|0|1|5|0|0|The user bites with frozen fangs![NEWLINE]-10% chance to make the target flinch.[NEWLINE]-10% chance to freeze.|frze 10 flinch 10
+218|Glaciate|65|65|10|1|0|5|0|0|The user blows freezing cold air at the target![NEWLINE]-Lowers the target's Spe. 1 stage.|stat targ,sp,-1,100
+219|Hex|65|65|10|1|0|13|0|0|The user attacks relentlessly![NEWLINE]-Doubles damage when the target has a status condition.|hex
+220|Swift|60|60|20|1|0|0|0|6|The user shoots star-shaped rays at the target![NEWLINE]-Bypasses accuracy checks.|noMiss
+221|Flame Wheel|60|60|15|0|1|1|0|0|The user covers itself in fire and rolls into the target![NEWLINE]-10% chance to burn.[NEWLINE]-Thaws a frozen user.|burn 10 thaws
+222|Incinerate|60|60|15|1|0|1|0|0|The user attacks with a destructive fire!|null
+223|Water Pulse|60|60|20|1|0|2|0|0|The user attacks the target with a pulsing blast of water![NEWLINE]-20% chance to confuse.[NEWLINE]-Pulse move.|conf 20 pulse
+224|Jet Punch|60|60|15|0|1|2|1|0|The user summons a torrent around its fist and punches at blinding speed.[NEWLINE]-Priority +1.|null
+225|Frost Breath|60|60|10|1|0|5|0|0|The user blows cold breath on the target![NEWLINE]-Always lands a critical hit.|frostbreath
+226|Storm Throw|60|60|10|0|1|6|0|0|The user strikes the target with a fierce blow![NEWLINE]-Always lands a critical hit.|frostbreath
+227|Bulldoze|60|60|20|0|0|8|0|5|The user strikes everything around it by stomping on the ground![NEWLINE]-Lowers the target's Spe. 1 stage.[NEWLINE]-Power is halved if used on Grassy Terrain.|nerfGrassy stat targ,sp,-1,100
+228|Air Cutter|60|60|25|1|0|9|0|6|The user launches razor-sharp winds to slash opponents![NEWLINE]-Increased crit' ratio.|highCrit
+229|Aerial Ace|60|60|20|0|1|9|0|1|The user confounds the target with speed, then slashes![NEWLINE]-Bypasses accuracy checks.|noMiss
+230|Silver Wind|60|60|5|1|0|11|0|0|The user attacks with powderly scales carried on the wind![NEWLINE]-10% chance to raise all stats 1. stage each.|stat self,at:de:sa:sd:sp,1:1:1:1:1,10
+231|Ominous Wind|60|60|5|1|0|13|0|0|The user attacks with a mysterious wind![NEWLINE]-10% chance to raise all stats 1 stage each.|stat self,at:de:sa:sd:sp,1:1:1:1:1,10
+232|Infernal Parade|60|60|15|1|0|13|0|0|The user attacks with a myriad of fireballs![NEWLINE]-30% chance to burn.[NEWLINE]-Doubles damage when the target has a status condition.|hex burn 30
+233|Bite|60|60|25|0|1|15|0|0|The user bites the target with viciously sharp fangs![NEWLINE]-30% chance to make the target flinch.|flinch 30
+234|Icy Wind|55|55|15|1|0|5|0|6|The user attacks with a gust of chilled air![NEWLINE]-Lowers the target's Spe. 1 stage.|stat targ,sp,-1,100
+235|Acrobatics|110|110|15|0|1|9|0|1|The user nimbly strikes the target!|null
+236|Weather Ball|50|50|10|1|0|0|0|0|The user harnesses the power of the weather to attack![NEWLINE]-Changes type and doubles power in non-clear weather.[NEWLINE]-Ball/bomb move.|weatherball bullet
+237|Terrain Pulse|50|50|10|1|0|0|0|0|The user utilizes the energy of the terrain to attack![NEWLINE]-Changes type and doubles power in terrain.[NEWLINE]-Pulse move.|terrainpulse pulse
+238|Cut|50|50|30|0|1|0|0|0|The user cuts the target with a scythe or claw!|null
+239|Flame Charge|50|50|20|0|1|1|0|0|The user cloaks itself in flames and builds momentum to attack![NEWLINE]-Raises the user's Spe. 1 stage.|stat self,sp,1,100
+240|Chilling Water|50|50|20|1|0|2|0|0|The user attacks the target with water so cold it saps the target's power![NEWLINE]-Lowers target's Atk. 1 stage.|stat targ,at,-1,100
+241|Poison Fang|50|50|15|0|1|7|0|0|The user bites the target with toxic fangs![NEWLINE]-50% chance to badly poison.|badPois 50
+242|Metal Claw|50|50|35|0|1|16|0|0|The user rakes the target with steel claws![NEWLINE]-10% chance to raise the user's Atk. 1 stage.|stat self,at,1,10
+243|Fake Out|40|40|10|0|1|0|3|0|The user hits first and makes the target flinch![NEWLINE]-Priority +3.[NEWLINE]-Only works on the first turn after the user enters battle.|flinch 100 fakeout
+244|Quick Attack|40|40|30|0|1|0|1|0|The user lunges at the target so fast it becomes invisible![NEWLINE]-Priority +1.|null
+245|Tackle|40|40|35|0|1|0|0|0|The user charges to attack!|null
+246|Ember|40|40|25|1|0|1|0|0|The user attacks with small flames![NEWLINE]-10% chance to burn.|burn 10
+247|Aqua Jet|40|40|20|0|1|2|1|0|The user covers itself in water and lunges at the target![NEWLINE]-Priority +1.|null
+248|Ice Shard|40|40|30|0|0|5|1|0|The user flash-freezes chunks of ice and hurls them at the target![NEWLINE]-Priority +1.|null
+249|Vacuum Wave|40|40|30|1|0|6|1|0|The user whirls its fists to send a wave of pure vacuum at the target![NEWLINE]-Priority +1.|null
+250|Mach Punch|40|40|30|0|1|6|1|0|The user throws a punch at blinding speed![NEWLINE]-Priority +1.|null
+251|Gust|40|40|35|1|0|9|0|1|The user whips up a gust of wind with its wings and launches it at the target!|gust
+252|Accelerock|40|40|20|0|1|12|1|0|The user smashes into the target at high speed![NEWLINE]-Priority +1.|null
+253|Shadow Sneak|40|40|30|0|1|13|1|0|The user extends its shadow and attacks the target from behind![NEWLINE]-Priority +1.|null
+254|Twister|40|40|20|1|0|14|0|0|The user whips up a vicious tornado to tear at the target![NEWLINE]-20% chance to make the target flinch.|gust flinch 20
+255|Bullet Punch|40|40|30|0|1|16|1|0|The user strikes the taret with tough punches as fast as bullets![NEWLINE]-Priority +1.|null
+256|Rollout|30|30|20|0|1|12|0|0|The user rolls into the target for fives turns![NEWLINE]-Doubles in damage for each consecutive hit.|rollout
+257|Super Fang|1|1|10|0|1|0|0|0|The user chomps hard on the target with its sharp fangs![NEWLINE]-Does damage equal to half of the target's remaining HP.|ruination
+258|Ruination|1|1|10|1|0|15|0|0|The user summons a disaster that leaves the target in ruins![NEWLINE]-Does damage equal to half of the target's remaining HP.|ruination
+259|Nature's Madness|1|1|10|1|0|17|0|0|The user hits the target with the full wrath of nature![NEWLINE]-Does damage equal to half of the target's remaining HP.|ruination
+260|Counter|1|1|20|0|1|6|-5|18|An attack for countering any physical move.[NEWLINE]-Inflicts on the target double the damage taken by the user.|counter
+261|Mirror Coat|1|1|20|1|0|10|-5|18|An attack for countering any special move.[NEWLINE]-Inflicts on the target double the damage taken by the user.|mirrorcoat
+262|Sunny Day|0|0|5|2|0|1|0|15|The user calls on the Sun and causes harsh sunlight!|sun noMiss noTarg
+263|Rain Dance|0|0|5|2|0|2|0|15|The user disrupts the air pressure and causes rain!|rain noMiss noTarg
+264|Hail|0|0|5|2|0|5|0|15|The user summons a cloudy cold front and creates a hailstorm!|hail noMiss noTarg
+265|Sandstorm|0|0|5|2|0|12|0|15|The user calls on the local sands to whip up a sandstorm!|sand noMiss noTarg
+266|Grassy Terrain|0|0|10|2|0|3|0|15|The user covers the battlefield with grass for 5 turns![NEWLINE]-Grass-type moves from grounded Pokémon get a 30% damage boost.[NEWLINE]-Grounded Pokémon heal 1/16 of their max HP each turn.[NEWLINE]-Bulldoze, Earthquake, Magnitude are halved in power.|grassy noMiss noTarg
+267|Electric Terrain|0|0|10|2|0|4|0|15|The user electrifies the battlefield for 5 turns![NEWLINE]-Electric-type moves from grounded Pokémon get a 30% damage boost.[NEWLINE]-Grounded Pokémon cannot be put to sleep.|electric noMiss noTarg
+268|Psychic Terrain|0|0|10|2|0|10|0|15|The user makes the battlefield weird for 5 turns![NEWLINE]-Psychic-type moves from grounded Pokémon get a 30% damage boost.[NEWLINE]-Grounded Pokémon cannot be hit by priority moves.|psychic noMiss noTarg
+269|Misty Terrain|0|0|10|2|0|17|0|15|The user covers the battlefield in mist for 5 turns![NEWLINE]-Dragon-type moves targeting grounded Pokémon get a 50% damage nerf.[NEWLINE]-Grounded Pokémon cannot be afflicted with status conditions.|misty noMiss noTarg
+270|Toxic Spikes|0|0|20|2|0|7|0|16|The user sends out toxic barbs on the target's side of the field![NEWLINE]-Grounded Pokémon are poisoned upon entry.[NEWLINE]-Stacks up to 2 times for bad poison.[NEWLINE]-Grounded Poison-type Pokémon will absorb already placed Toxic Spikes.|noMiss toxspk noTarg
+271|Spikes|0|0|20|2|0|8|0|16|The user spreads spikes on the target's side of the field![NEWLINE]-Grounded Pokémon are damaged upon entry.[NEWLINE]-Stacks up to 3 times for more damage.|noMiss spikes noTarg
+272|Sticky Web|0|0|20|2|0|11|0|16|The user weaves a web on the target's side of the field![NEWLINE]-Lowers Spe. of grounded Pokémon 1 stage upon entry.|noMiss sticky noTarg
+273|Stealth Rocks|0|0|20|2|0|12|0|16|The user spreads pointed stones on the target's side of the field![NEWLINE]-Does Rock-type damage to all Pokémon upon entry.|noMiss rocks noTarg
+274|Aurora Veil|0|0|20|2|0|5|0|17|The user draws on the hail to create a barrier that reduces damage from physical and special attacks for 5 turns![NEWLINE]Fails if it isn't hailing.|veil needHail noTarg
+275|Reflect|0|0|20|2|0|10|0|17|The user creates a wall of light that reduces damage from physical attacks for 5 turns!|reflect noMiss noTarg
+276|Light Screen|0|0|20|2|0|10|0|17|The user creates a wall of light that reduces damage from special attacks for 5 turns!|lightscreen noMiss noTarg
+277|Recover|0|0|10|2|0|0|0|11|The user regenerates cells to heal itself by half its max HP!|heals recover noMiss noTarg
+278|Milk Drink|0|0|5|2|0|0|0|11|The user drinks some milk to restore half its max HP!|heals recover noMiss noTarg 
+279|Soft-Boiled|0|0|5|2|0|0|0|11|The user eats a tasty egg and restores half its max HP!|heals recover noMiss noTarg 
+280|Slack-Off|0|0|5|2|0|0|0|11|The user takes a well-deserved break and restores half its max HP!|heals recover noMiss noTarg 
+281|Morning Sun|0|0|5|2|0|0|0|11|The user basks in the morning sun to restore HP![NEWLINE]-Restores 2/3 of the user's max HP in harsh sunlight.[NEWLINE]-1/2 max HP in clear weather.[NEWLINE]-1/4 max HP in rain, sandstorm, hail.|heals synthesis noMiss noTarg
+282|Aqua Ring|0|0|20|2|0|2|0|11|The user envelops itself with a veil of healing waters![NEWLINE]-Restores 1/16 of the user's max HP at the end of each turn.|aquaring noMiss noTarg
+283|Take Heart|0|0|10|2|0|2|0|11|The user focuses on the positives to lift its spirits![NEWLINE]-Raises the user's Sp.A Sp.D 1 stage each.[NEWLINE]-Heals status conditions.|stat self,sa:sd,1:1,100 refresh noMiss noTarg
+284|Synthesis|0|0|5|2|0|3|0|11|The user takes in sunlight to restore HP![NEWLINE]-Restores 2/3 of the user's max HP in harsh sunlight.[NEWLINE]-1/2 max HP in clear weather.[NEWLINE]-1/4 max HP in rain, sandstorm, hail.|heals synthesis noMiss noTarg
+285|Shore Up|0|0|5|2|0|8|0|11|The user draws in sand to restore itself![NEWLINE]-Restores 2/3 of the user's max HP in a sandstorm.[NEWLINE]-1/2 max HP in all other conditions.|heals shoreup
+286|Jungle Healing|0|0|5|2|0|3|0|9|The user becomes one with the jungle![NEWLINE]-Restores 25% of the user's max HP.[NEWLINE]-Heals status conditions.|heals blessing refresh noMiss noTarg
+287|Lunar Blessing|0|0|5|2|0|10|0|9|The user receives a blessing from the crescent moon![NEWLINE]-Restores 25% of the user's max HP.[NEWLINE]-Heals status conditions.|heals blessing refresh noMiss noTarg
+288|Moonlight|0|0|5|2|0|17|0|11|The user basks in the moonlight to restore HP![NEWLINE]-Restores 2/3 of the user's max HP in harsh sunlight.[NEWLINE]-1/2 max HP in clear weather.[NEWLINE]-1/4 max HP in rain, sandstorm, hail.|heals synthesis noMiss noTarg
+289|Focus Energy|0|0|30|2|0|0|0|11|The user takes a deep breath and heightens its focus![NEWLINE]-Increases chances of landing crit' hits.|focusenergy noMiss noTarg
+290|Harden|0|0|40|2|0|0|0|11|The user stiffens the muscles in its body![NEWLINE]-Raises the user's Def. 1 stage.|stat self,de,1 noMiss noTarg
+291|Defense Curl|0|0|40|2|0|0|0|11|The user curls up to hide its weak spots![NEWLINE]-Raises the user's Def. 1 stage.|stat self,de,1 noMiss curled noTarg
+292|Swords Dance|0|0|20|2|0|0|0|11|The user uplifts the fighting spirit with a frenetic dance![NEWLINE]-Raises the user's Atk. 2 stages.|stat self,at,2 noMiss noTarg
+293|Growth|0|0|20|2|0|0|0|11|The user's body grows all at once![NEWLINE]-Raises the user's Atk. Sp.A 1 stage each.[NEWLINE]-2 stages each in harsh sunlight.|stat self,at:sa,1:1 noMiss growth noTarg
+294|Double Team|0|0|15|2|0|0|0|11|The user moves so quick it creates afterimages![NEWLINE]-Raises the user's Evas. 1 stage.|stat self,ev,1 noMiss noTarg
+295|Confide|0|0|20|2|0|0|0|0|The user tells the target a (quite inappropriate) secret![NEWLINE]-Lowers the target's Sp.A 1 stage.|stat targ,sa,-1 noMiss
+296|Growl|0|0|40|2|0|0|0|0|The user growls cutely to disarm the target![NEWLINE]-Lowers the target's Atk. 1 stage.|stat targ,at,-1
+297|Withdraw|0|0|40|2|0|2|0|11|The user withdraws into its body![NEWLINE]-Raises the user's Def. 1 stage.|stat self,de,1,100 noMiss noTarg
+298|Victory Dance|0|0|10|2|0|6|0|11|The user performs an intense dance to usher in victory![NEWLINE]-Raises the user's Atk. Def. Spe. 1 stage each.|stat self,at:de:sp,1:1:1,100 noMiss noTarg
+299|Feather Dance|0|0|15|2|0|9|0|0|The user covers the target with a mass of down![NEWLINE]-Lowers the target's Atk. 2 stages.|stat targ,at,-2,100
+300|Amnesia|0|0|20|2|0|10|0|11|The user empties its mind and forgets its concerns![NEWLINE]-Raises the user's Sp.D 2 stages.|stat self,sd,2 noMiss noTarg
+301|String Shot|0|0|40|2|0|11|0|0|The user spins silk to bind the target![NEWLINE]-Lowers the target's Spe. 1 stage.|stat targ,sp,-1
+302|Quiver Dance|0|0|20|2|0|11|0|11|The user lightly performs a beautiful, mystic dance![NEWLINE]-Raises the user's Sp.A Sp.D Spe. 1 stage each.|stat self,sa:sd:sp,1:1:1,100 noMiss noTarg
+303|Defend Order|0|0|10|2|0|11|0|11|The user calls on its underlings to fortify its defenses![NEWLINE]-Raises the user's Def. Sp.D 1 stage each.|stat self,de:sd,1:1,100 noMiss noTarg
+304|Dragon Dance|0|0|20|2|0|14|0|11|The user vigorously performs a mystic, poweful dance![NEWLINE]-Raises the user's Atk. Spe. 1 stage each.|stat self,at:sp,1:1 noMiss noTarg
+305|Nasty Plot|0|0|20|2|0|15|0|11|The user stimulates the brain by thinking bad thoughts![NEWLINE]-Raises the user's Sp.A 2 stages.|stat self,sa,2 noMiss noTarg
+306|Metal Sound|0|0|40|2|0|16|0|0|The user creates horrible metal-scraping sounds to unnerve the target![NEWLINE]-Lowers the target's Sp.D 2 stages.[NEWLINE]-Sound move.|stat targ,sd,-2 sound
+307|Shelter|0|0|10|2|0|16|0|11|The user makes its skin as hard as an iron shield![NEWLINE]-Raises the user's Def. 2 stages.|stat self,de,2,100 noMiss noTarg
+308|Shift Gear|0|0|10|2|0|16|0|11|The user powers up by rotating its gears![NEWLINE]-Raises the user's Atk. 1 stage, Spe. 2 stages.|noMiss noTarg stat self,at:sp,1:2,100
+309|Geomancy|0|0|10|2|0|17|0|11|The user absorbs energy from its surroundings and powers up on the next turn![NEWLINE]-Raises the user's Sp.A Sp.D Spe. 2 stages each.[NEWLINE]-Two-turn move.|stat self,sa:sd:sp,2:2:2 noMiss 2turn geomance noTarg
+310|Baby-Doll Eyes|0|0|30|2|0|17|1|0|The user stares at the target with its baby-doll eyes![NEWLINE]-Lowers the target's Atk. 1 stage.[NEWLINE]-Priority +1.|stat targ,at,-1,100
+311|Will-O-Wisp|0|0|15|2|0|1|0|0|The user shoots a sinister flame to burn the target!|burn 100
+312|Stun Spore|0|0|30|2|0|3|0|0|The user releases spores that paralyze the target!|para 100 typeImmune grass
+313|Sleep Powder|0|0|15|2|0|3|0|0|The user uses a powder to lull the target to sleep!|sleep 100 typeImmune grass
+314|Thunder Wave|0|0|20|2|0|4|0|0|The user launches a jolt of electricity that paralyzes the target!|para 100
+315|Poison Powder|0|0|35|2|0|7|0|0|The user creates a powder to poison the target!|pois 100 typeImmune grass
+316|Toxic|0|0|10|2|0|7|0|0|The user badly poisons the target!|badPois 100 noMissPoisons
+317|Hypnosis|0|0|20|2|0|10|0|0|The user employs hypnotic suggestion to make the target fall asleep!|sleep 100
+318|Confuse Ray|0|0|10|2|0|13|0|0|The user lets loose a sinister beam that causes confusion!|conf 100
+319|Dark Void|0|0|10|2|0|15|0|6|The user banishes the target to a world of total darkness that puts them to sleep!|sleep 100
+320|Struggle|50|50|1|0|1|18|0|14|The user is otherwise out of moves!|noMiss recoil 1/4maxhp
