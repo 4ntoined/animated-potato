@@ -51,4 +51,13 @@ this is FUN i am having FUN i ENJOY this work.
 one minor hiccup which I was able to overcome on my first try, so doing pretty good.
 next up is programming the mon maker function to give mons moves, also showing moves
 in summary, then i think we're ready for party making.
+21:01- completely forgot about the moves notes from the last log entry and went ahead
+and made the party making function. I tried to do random and non-random in the same
+function but it wasnt working out, so they will be separate for now. anyway we are
+making parties (randomly) now, quite very cool. at some point I will need to look at
+giving mons moves and showing them in the summary, and then a print party function
+seems like a logical next step.
+21:11- okay a few more tweaks and I fixed a thing with null natures where a mon's
+summary would report the same stat as boosted and nerfed. feels like an inelegant
+solution that I've come to, but whatever, it works.
 

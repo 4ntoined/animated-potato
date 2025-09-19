@@ -9,7 +9,7 @@ import java.time.ZoneId
 import java.time.Instant
 //import java.time.format.DateTimeFormatter
 
-class mon (
+class Mon (
     var name: String,
     var level: Int = 100,
     var hpb: Int = 100,
@@ -161,8 +161,12 @@ class mon (
         println("Gender: \t$gender")
         // NATURE
         val naturestr = nature_names[nature_up][nature_down]
-        val naturestat_up = nature_stat_str[nature_up]
-        val naturestat_down = nature_stat_str[nature_down]
+        var naturestat_up = nature_stat_str[nature_up]
+        var naturestat_down = nature_stat_str[nature_down]
+        if (null_nature) {
+            naturestat_up = "None"
+            naturestat_down = "None"
+        }
         
         println("Nature: $naturestr | Boosted - $naturestat_up, Nerfed - $naturestat_down")
         // STATS
@@ -186,7 +190,7 @@ class mon (
         // MOVES
         //
         // MET DATA
-        println("This Pok\u00e9mon was initialized on")
+        println("This Pokémon was initialized on")
         // TIME
         val birth_time_str = ZonedDateTime.ofInstant(birth_time_instant, ZoneId.of("Z")).format(summary_time_formatter)
         println("=== $birth_time_str" + " UTC")
@@ -199,6 +203,7 @@ class mon (
             "hacked" -> println("=== It was created externally!")
             "starter" -> println("=== It was a starter Pokémon!")
             "elite" -> println("=== It was trained by an elite!")
+            "random" -> println("=== It was randomized by Boxes!")
             else -> println("=== It appeared mysteriously...")
         }
         

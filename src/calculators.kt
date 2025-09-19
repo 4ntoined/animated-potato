@@ -15,7 +15,7 @@ fun HPstat_calculation (level: Int,base: Int, IVstat: Int, EVstat: Int): Int {
     val ans = (((2 * base + IVstat + EVstat/4)*level/100.0)+level+10).toInt()
     return ans
 }
-fun HPstat_calculation_mon (poke: mon): Int {
+fun HPstat_calculation_mon (poke: Mon): Int {
     val ans = (((2 * poke.hpb + poke.hpiv + poke.hpev/4)*poke.level/100.0)+poke.level+10).toInt()
     return ans
 }

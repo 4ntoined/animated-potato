@@ -1,5 +1,7 @@
 package com.aarocket.pokemonkt
 
+import kotlin.random.Random
+
 fun make_fromdex(
     dexnumber: Int = (0..n_pokedex-1).toList().random(),
     level: Int = 100,
@@ -8,13 +10,13 @@ fun make_fromdex(
     birth_path: String = "hacked",
     nickname: String = "",
     random: Boolean = false
-) : mon {
+) : Mon {
     val dexdata = pokedex[dexnumber]
     var named = dexdata.species
     if (nickname!=""){
         named = nickname
     }
-    val mademon = mon(
+    val mademon = Mon(
         name = named,
         level = level,
         hpb = dexdata.hp,
@@ -30,4 +32,18 @@ fun make_fromdex(
         birth_path = birth_path
         )
     return mademon
+}
+
+fun make_random_party(
+    //dexnumbers = List(0){},
+    number: Int = 6,
+    level: Int = 100,
+    birth_path: String = "random",
+) : MutableList<Mon> {
+    val indexes = List(number) {Random.nextInt(0,n_pokedex)}
+    val party = mutableListOf<Mon> ()
+    indexes.forEach {
+        party += make_fromdex(dexnumber = it, level = level, birth_path = birth_path,)
+    }
+    return party
 }
